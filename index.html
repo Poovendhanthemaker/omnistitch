@@ -1422,7 +1422,7 @@ renderFilms(); renderSummary();
     const pad = n => String(n).padStart(5, '0');
     ctx.fillText((hi ? 'HI ' + pad(hi) + '  ' : '') + pad(score), W - 4, 11);
     ctx.textAlign = 'left';
-    if (dead && mode === 'play') { ctx.fillStyle = C.p; ctx.font = '700 11px Inter, "Segoe UI", sans-serif'; ctx.fillText('Decayed!  Click to try again', 70, 13); }
+    if (dead && mode === 'play') { ctx.fillStyle = C.p; ctx.font = '700 11px Inter, "Segoe UI", sans-serif'; ctx.fillText('Annihilated!  Click to try again', 70, 13); }
     else if (mode === 'auto') { ctx.fillStyle = C.txt; ctx.globalAlpha = .7; ctx.font = '500 10px Inter, "Segoe UI", sans-serif'; ctx.fillText('click to play', 70, 11); ctx.globalAlpha = 1; }
     if (!reduce) requestAnimationFrame(step);
   }
