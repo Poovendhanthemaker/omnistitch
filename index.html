@@ -1,0 +1,1340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>OmniStitch</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<meta name="description" content="Stitch planar gamma-camera spot images into a whole-body DICOM, entirely in your browser.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<meta property="og:type" content="website">
+<meta property="og:title" content="OmniStitch: spot views in, whole-body scan out">
+<meta property="og:description" content="Stitch planar gamma-camera spot images into a seamless NM Whole Body DICOM. Free, runs locally in your browser.">
+<meta property="og:url" content="https://stitch.nmcalc.com/">
+<meta property="og:image" content="https://stitch.nmcalc.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://stitch.nmcalc.com/og.png">
+<link rel="apple-touch-icon" href="omnistitch-logo-256.png">
+<style>
+/* Layout: NMCalc house style — light grey page, white cards with a green left rule; spot rack · ANT/POST film · seam console. */
+:root {
+  color-scheme: light;
+  --bg: #f4f4f4; --panel: #ffffff; --ink: #2d3748; --title: #1a202c; --sub: #4a5568; --muted: #718096; --line: #e2e8f0;
+  --accent: #388e3c; --accent-strong: #2e7d32; --accent-bar: #4caf50; --accent-ink: #ffffff; --accent-soft: #e8f5e9; --accent-softer: #f1f8f2;
+  --warn: #b45309; --warn-soft: #fff7e6; --film: #ffffff; --chip: #f7fafc; --ant: #388e3c; --post: #1e88e5;
+  --shadow: 0 2px 8px rgba(0, 0, 0, .07);
+  --f-display: "Inter", "Segoe UI", Arial, sans-serif;
+  --f-body: "Inter", "Segoe UI", Arial, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --r: 10px;
+}
+* { box-sizing: border-box }
+[hidden] { display: none !important }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 var(--f-body); padding-inline: 16px; padding-block: 0 24px }
+.wrap { max-width: 1480px; margin: 0 auto }
+header { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; padding-block: 18px 14px }
+.brand { display: flex; align-items: center; gap: 10px; font-family: var(--f-display); font-weight: 800; font-size: 28px; letter-spacing: -.02em; line-height: 1; color: var(--title) }
+.brand img { flex: none; display: block; width: 40px; height: 40px }
+.brand .word span { color: var(--accent) }
+.tag { color: var(--sub); font-size: 15px; flex: 1 1 260px; min-width: 0 }
+.tag a { color: var(--accent); font-weight: 600; text-decoration: none }
+.pill { margin-left: auto; font: 600 11px var(--f-body); padding: 4px 10px; border-radius: 12px; background: var(--accent-soft); color: var(--accent); white-space: nowrap }
+.grid { display: grid; grid-template-columns: 300px minmax(0, 1fr) 320px; gap: 16px; align-items: start }
+@media (max-width: 1150px) { .grid { grid-template-columns: 290px minmax(0, 1fr) } .console { grid-column: 1 / -1 } }
+@media (max-width: 760px) { .grid { grid-template-columns: minmax(0, 1fr) } }
+.panel { background: var(--panel); border-left: 4px solid var(--accent-bar); border-radius: var(--r); box-shadow: var(--shadow); padding: 18px; min-width: 0 }
+h2 { display: flex; align-items: center; gap: 10px; font: 700 11px var(--f-body); text-transform: uppercase; letter-spacing: 1.3px; color: var(--sub); margin: 0 0 12px }
+h2::after { content: ""; flex: 1; height: 1px; background: var(--line) }
+h2 + h2, .sect + h2 { margin-top: 16px }
+.stack { display: flex; flex-direction: column; gap: 14px }
+
+.drop { border: 1.5px dashed var(--line); border-radius: var(--r); padding: 14px; text-align: center; transition: border-color .15s, background .15s }
+.drop.over { border-color: var(--accent-bar); background: var(--accent-softer) }
+.drop p { margin: 0 0 10px; color: var(--muted); font-size: 14px }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center }
+button, .btn { font: 600 13.5px var(--f-body); border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 8px; padding: 7px 13px; cursor: pointer; transition: background .15s, border-color .15s }
+button:hover { border-color: var(--accent-bar); background: var(--accent-softer) }
+button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent) }
+button.primary:hover { background: var(--accent-strong); border-color: var(--accent-strong) }
+button:disabled { opacity: .45; cursor: not-allowed }
+button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.demo-note { font-size: 13px; color: var(--warn); background: var(--warn-soft); border-radius: 6px; padding: 8px 10px; margin-top: 10px }
+
+.spots { display: flex; flex-direction: column; gap: 6px; max-height: 62vh; overflow: auto; margin-top: 12px; padding-right: 2px }
+.grp { font: 700 13px var(--f-body); color: var(--title); margin: 10px 0 4px; display: flex; justify-content: space-between; align-items: center }
+.grp .cnt { font: 600 10.9px var(--f-body); background: var(--accent-soft); color: var(--accent); border-radius: 12px; padding: 2px 8px }
+.spot { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 6px 2px; border-top: 1px solid var(--line) }
+.spot:hover { background: var(--accent-softer) }
+.spot.off { opacity: .55 }
+.spot canvas { width: 44px; height: 32px; border-radius: 3px; background: var(--film); border: 1px solid var(--line) }
+.spot .nm { font-weight: 500; font-size: 13.5px; color: var(--sub); white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+.spot .meta { font: 12px var(--f-mono); color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+select { font: 500 12px var(--f-mono); background: var(--chip); color: var(--ink); border: 1px solid var(--line); border-radius: 5px; padding: 4px 4px }
+
+.viewer { display: flex; flex-direction: column; gap: 10px }
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; font-size: 14px }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden }
+.seg button { border: 0; border-radius: 0; padding: 5px 10px; font-weight: 500 }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink) }
+.seg button + button { border-left: 1px solid var(--line) }
+label.ck { display: inline-flex; gap: 6px; align-items: center; cursor: pointer }
+input[type=range] { accent-color: var(--accent); width: 130px }
+.films { display: flex; gap: 14px; justify-content: center; overflow-x: auto; padding-block: 4px }
+.film { display: flex; flex-direction: column; align-items: center; gap: 6px; min-width: 0 }
+.film .cap { font: 700 11px var(--f-body); letter-spacing: 1.3px }
+.film .cap.ant { color: var(--ant) } .film .cap.post { color: var(--post) } .film .cap.obl { color: var(--sub) }
+.film .box { position: relative; background: var(--film); border: 1px solid var(--line); border-radius: 4px; line-height: 0 }
+.film canvas { display: block; height: min(74vh, 900px); width: auto; max-width: 100% }
+.film .marks { position: absolute; inset: 0; pointer-events: none }
+.mark { position: absolute; left: 0; right: 0; border-top: 1px dashed var(--accent-bar); opacity: .9 }
+.mark span { position: absolute; right: 2px; top: -16px; font: 500 10px var(--f-mono); color: var(--accent); background: var(--film); padding: 0 3px; line-height: 14px }
+.empty { color: var(--muted); padding: 60px 10px; text-align: center }
+
+.seam { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px; align-items: center; padding: 6px 0; border-top: 1px solid var(--line) }
+.seam .lbl { font-size: 13.5px; font-weight: 500; color: var(--sub); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.seam .ov { font: 12px var(--f-mono); color: var(--muted) }
+.seam .ov.bad { color: var(--warn); font-weight: 600 }
+.nudge { display: inline-flex; align-items: center; gap: 4px }
+.nudge button { padding: 2px 9px; font: 600 15px var(--f-mono) }
+.nudge output { font: 12px var(--f-mono); min-width: 34px; text-align: center; color: var(--muted) }
+.kv { display: grid; grid-template-columns: auto 1fr; gap: 3px 12px; font-size: 14px }
+.kv dt { color: var(--muted) } .kv dd { margin: 0; font-family: var(--f-mono); font-size: 13px; text-align: right; font-variant-numeric: tabular-nums }
+.warns { display: flex; flex-direction: column; gap: 6px; margin: 0; padding: 0; list-style: none }
+.warns li { background: var(--warn-soft); color: var(--warn); border-radius: 6px; padding: 7px 10px; font-size: 13px }
+.note { font-size: 13px; color: var(--muted); margin: 8px 0 0 }
+.how { margin-top: 18px; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px }
+.how > div { background: var(--panel); border-left: 4px solid var(--accent-bar); border-radius: var(--r); box-shadow: var(--shadow); padding: 16px 18px }
+.how h3 { font: 700 14.7px var(--f-body); color: var(--title); margin: 0 0 6px }
+.how p { margin: 0; color: var(--sub); font-size: 13.5px; max-width: 60ch }
+footer { margin-top: 18px; padding-top: 12px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 6px 18px; justify-content: space-between; font-size: 13px; color: var(--muted) }
+footer a { color: var(--accent); font-weight: 600; text-decoration: none }
+.toast { position: fixed; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--title); color: #ffffff; box-shadow: var(--shadow); padding: 9px 14px; border-radius: 6px; font-size: 14px; max-width: min(90vw, 560px); z-index: 9 }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0) }
+.vendor { border-top: 1px solid var(--line); padding-top: 10px; margin-bottom: 12px }
+.vendor summary { cursor: pointer; font-size: 13.5px; font-weight: 600; color: var(--sub); list-style-position: inside }
+.vendor summary .opt { font: 600 10.9px var(--f-body); background: var(--accent-soft); color: var(--accent); border-radius: 12px; padding: 2px 8px; margin-left: 6px }
+.tplinfo { margin-top: 8px; font-size: 13px; color: var(--sub); background: var(--accent-softer); border-radius: 8px; padding: 8px 10px }
+.tplinfo b { color: var(--title); font-weight: 600 }
+.tplinfo .w { color: var(--warn) }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important } }
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+<header>
+  <div class="brand"><img src="data:image/png;base64,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" width="40" height="40" alt=""><span class="word">Omni<span>Stitch</span></span></div>
+  <div class="pill">Runs locally in your browser</div>
+</header>
+
+<div class="grid">
+  <!-- Spot rack -->
+  <section class="panel" aria-labelledby="h-spots">
+    <h2 id="h-spots">Spot images</h2>
+    <div class="drop" id="drop">
+      <p>Drop DICOM spot files or a folder here</p>
+      <div class="row" style="justify-content:center">
+        <button class="primary" id="pick">Choose files</button>
+        <button id="pickdir">Choose folder</button>
+        <button id="demo">Demo phantom</button>
+      </div>
+      <input type="file" id="files" multiple hidden>
+      <input type="file" id="dir" webkitdirectory multiple hidden>
+    </div>
+    <div class="stack" style="gap:6px;margin-top:12px;font-size:13.5px">
+      <label class="ck"><input type="checkbox" id="obl"> Also stitch lateral and oblique views</label>
+      <label class="ck"><input type="checkbox" id="zoom" checked> Match mixed zoom (resample to the lowest zoom)</label>
+    </div>
+    <div class="demo-note" id="demonote" hidden>Showing a synthetic phantom (not patient data). Drop your own spots to replace it.</div>
+    <div class="spots" id="spots"></div>
+  </section>
+
+  <!-- Viewer -->
+  <section class="panel viewer" aria-labelledby="h-view">
+    <h2 id="h-view" class="sr">Whole-body preview</h2>
+    <div class="toolbar">
+      <div class="seg" role="group" aria-label="Colour scale">
+        <button data-cm="inv" aria-pressed="true">Inverse</button>
+        <button data-cm="gray" aria-pressed="false">Gray</button>
+        <button data-cm="hot" aria-pressed="false">Hot</button>
+      </div>
+      <label class="ck">Upper level <input type="range" id="level" min="5" max="100" value="55" aria-label="Upper display level"> <output id="levelv" style="font:12px var(--f-mono)">55%</output></label>
+      <label class="ck"><input type="checkbox" id="guides" checked> Seam guides</label>
+    </div>
+    <div class="films" id="films"></div>
+  </section>
+
+  <!-- Console -->
+  <section class="panel console stack" aria-labelledby="h-seams">
+    <div>
+      <h2 id="h-seams">Seams</h2>
+      <label class="ck" style="font-size:14px"><input type="checkbox" id="link"> Move all views together</label>
+      <div id="seams" style="margin-top:6px"></div>
+      <p class="note">Positions come from the table position in each DICOM header. Nudge a seam only if anatomy looks offset: + overlaps more, − overlaps less (1 px = <span id="pxmm">2.2</span> mm).</p>
+    </div>
+    <div>
+      <h2>Counts</h2>
+      <div class="stack" style="gap:6px;font-size:14px">
+        <label class="ck"><input type="checkbox" id="norm" checked> Match acquisition time between spots</label>
+        <label class="ck"><input type="checkbox" id="decay" checked> Decay-correct to the first spot</label>
+        <label class="ck" style="margin-top:4px">Overlap blending
+          <select id="blend" aria-label="Overlap blending" style="margin-left:4px">
+            <option value="noise" selected>Natural noise (recommended)</option>
+            <option value="average">Smooth average</option>
+          </select></label>
+      </div>
+    </div>
+    <div>
+      <h2>Result</h2>
+      <dl class="kv" id="summary"><dt>Status</dt><dd>—</dd></dl>
+      <ul class="warns" id="warns" style="margin-top:10px"></ul>
+    </div>
+    <div>
+      <h2>Export</h2>
+      <details class="vendor" id="vendor">
+        <summary>Vendor compatibility <span class="opt">optional</span></summary>
+        <p class="note" style="margin-top:6px">Load one whole-body DICOM from your camera. The export copies its header layout and vendor tags so the vendor's software reads it like its own. Patient details from that file are never copied.</p>
+        <div class="row" style="margin-top:8px">
+          <button id="tplpick">Load sample WB DICOM</button>
+          <button id="tplclear" hidden>Remove</button>
+          <input type="file" id="tplfile" hidden>
+        </div>
+        <div class="tplinfo" id="tplinfo" hidden></div>
+        <label class="ck" id="tplgeowrap" style="font-size:13.5px;margin-top:8px" hidden><input type="checkbox" id="tplgeo" checked> Match its matrix and pixel size</label>
+      </details>
+      <div class="row">
+        <button class="primary" id="savedcm" disabled>Download DICOM</button>
+        <button id="savepng" disabled>Download PNG</button>
+      </div>
+      <p class="note" id="dlnote">The DICOM is an NM Whole Body object with one frame per view (normally ANT + POST) that keeps the original patient and study, ready to import into your workstation or PACS.</p>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <span>Made by <a href="https://www.linkedin.com/in/poovendhan-mathiyazhagan/" target="_blank" rel="noopener">Poovendhan Mathiyazhagan</a></span>
+</footer>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+/* OmniStitch engine — DICOM read/write + whole-body stitching (no dependencies).
+ * Mirrors backend/stitching.py and backend/dicom_utils.py (v2).            */
+'use strict';
+const OS = (() => {
+
+// ───────────────────────────────────────────────────────────── dictionary ──
+// VRs for tags we decode or write (needed for implicit-VR input and output).
+const DICT = {
+  0x00020000:'UL',0x00020001:'OB',0x00020002:'UI',0x00020003:'UI',0x00020010:'UI',0x00020012:'UI',0x00020013:'SH',
+  0x00080005:'CS',0x00080008:'CS',0x00080012:'DA',0x00080013:'TM',0x00080016:'UI',0x00080018:'UI',
+  0x00080020:'DA',0x00080021:'DA',0x00080022:'DA',0x00080023:'DA',0x00080030:'TM',0x00080031:'TM',
+  0x00080032:'TM',0x00080033:'TM',0x00080050:'SH',0x00080060:'CS',0x00080070:'LO',0x00080080:'LO',
+  0x00080090:'PN',0x00081010:'SH',0x00081030:'LO',0x0008103E:'LO',0x00081070:'PN',0x00081090:'LO',
+  0x00082111:'ST',0x00082112:'SQ',0x00081150:'UI',0x00081155:'UI',0x00080100:'SH',0x00080102:'SH',0x00080104:'LO',
+  0x00100010:'PN',0x00100020:'LO',0x00100030:'DA',0x00100040:'CS',0x00101010:'AS',0x00101020:'DS',0x00101030:'DS',
+  0x00180015:'CS',0x00180070:'IS',0x00180071:'CS',0x00181000:'LO',0x00181020:'LO',0x00181030:'LO',
+  0x00181242:'IS',0x00181243:'IS',0x00181130:'DS',0x00181131:'DS',0x00181072:'TM',0x00181074:'DS',0x00181075:'DS',
+  0x00180031:'LO',0x00181301:'CS',0x00181300:'DS',0x00181302:'IS',
+  0x0020000D:'UI',0x0020000E:'UI',0x00200010:'SH',0x00200011:'IS',0x00200013:'IS',0x00200052:'UI',
+  0x00201040:'LO',0x00204000:'LT',0x00200032:'DS',0x00200037:'DS',0x00201041:'DS',0x00200020:'CS',
+  0x00280002:'US',0x00280004:'CS',0x00280008:'IS',0x00280009:'AT',0x00280010:'US',0x00280011:'US',
+  0x00280030:'DS',0x00280031:'DS',0x00280032:'DS',0x00280100:'US',0x00280101:'US',0x00280102:'US',0x00280103:'US',
+  0x00280106:'US',0x00280107:'US',0x00281050:'DS',0x00281051:'DS',0x00281052:'DS',0x00281053:'DS',
+  0x00540010:'US',0x00540011:'US',0x00540012:'SQ',0x00540013:'SQ',0x00540014:'DS',0x00540015:'DS',0x00540018:'SH',
+  0x00540016:'SQ',0x00540300:'SQ',0x00540020:'US',0x00540021:'US',0x00540022:'SQ',0x00540200:'DS',
+  0x00540400:'SH',0x00540410:'SQ',0x00540412:'SQ',0x00540414:'SQ',0x00180034:'LO',0x00181071:'DS',0x00181078:'DT',0x00181079:'DT',
+  0x00540220:'SQ',0x00540222:'SQ',0x00080034:'LO',
+  0x7FE00010:'OW',
+};
+const LONG_VR = new Set(['OB','OD','OF','OL','OW','OV','SQ','UC','UN','UR','UT','SV','UV']);
+const ITEM = 0xFFFEE000, ITEM_END = 0xFFFEE00D, SEQ_END = 0xFFFEE0DD;
+const T = (g, e) => ((g << 16) | e) >>> 0;
+const hex = t => '(' + (t >>> 16).toString(16).padStart(4, '0').toUpperCase() + ',' + (t & 0xFFFF).toString(16).padStart(4, '0').toUpperCase() + ')';
+
+// ──────────────────────────────────────────────────────────────── parsing ──
+function parseDicom(buf) {
+  const u8 = buf instanceof Uint8Array ? buf : new Uint8Array(buf);
+  const dv = new DataView(u8.buffer, u8.byteOffset, u8.byteLength);
+  let pos = 0;
+  if (u8.length > 132 && u8[128] === 68 && u8[129] === 73 && u8[130] === 67 && u8[131] === 77) pos = 132;
+  // File meta (always explicit little endian)
+  const meta = new Map();
+  while (pos + 8 <= u8.length && dv.getUint16(pos, true) === 0x0002) {
+    const r = readEl(u8, dv, pos, true, u8.length); meta.set(r.el.tag, r.el); pos = r.next;
+  }
+  const ts = meta.has(0x00020010) ? str(meta.get(0x00020010)) : '1.2.840.10008.1.2';
+  if (ts === '1.2.840.10008.1.2.2') throw new Error('Big-endian DICOM is not supported. Export the images uncompressed (little endian).');
+  if (ts !== '1.2.840.10008.1.2' && ts !== '1.2.840.10008.1.2.1')
+    throw new Error('Compressed DICOM (transfer syntax ' + ts + ') is not supported. Export the spots uncompressed from the camera or PACS.');
+  const explicit = ts !== '1.2.840.10008.1.2';
+  const ds = readSet(u8, dv, pos, u8.length, explicit).set;
+  return { meta, ds, explicit };
+}
+
+function readSet(u8, dv, pos, end, explicit, stopAtItemEnd) {
+  const set = new Map();
+  while (pos + 8 <= end) {
+    const tag = ((dv.getUint16(pos, true) << 16) | dv.getUint16(pos + 2, true)) >>> 0;
+    if (tag === ITEM_END) { pos += 8; break; }
+    if (tag === SEQ_END) break;
+    const r = readEl(u8, dv, pos, explicit, end);
+    set.set(r.el.tag, r.el); pos = r.next;
+  }
+  return { set, next: pos };
+}
+
+function readEl(u8, dv, pos, explicit, end) {
+  const tag = ((dv.getUint16(pos, true) << 16) | dv.getUint16(pos + 2, true)) >>> 0;
+  let vr, len, p = pos + 4;
+  const vr2 = String.fromCharCode(u8[p], u8[p + 1]);
+  if (explicit && /^[A-Z]{2}$/.test(vr2)) {
+    vr = vr2;
+    if (LONG_VR.has(vr)) { len = dv.getUint32(p + 4, true); p += 8; }
+    else { len = dv.getUint16(p + 2, true); p += 4; }
+  } else {
+    vr = DICT[tag] || ((tag & 0xFFFF) === 0 ? 'UL' : null);
+    len = dv.getUint32(p, true); p += 4;
+  }
+  const undef = len === 0xFFFFFFFF;
+  // Sequence (declared, or implicit with undefined length / item start)
+  const looksSeq = vr === 'SQ' || (!explicit && !vr && (undef || (len >= 8 && p + 4 <= end && dv.getUint16(p, true) === 0xFFFE && dv.getUint16(p + 2, true) === 0xE000)));
+  if (looksSeq) {
+    const items = []; const stop = undef ? end : p + len; let q = p;
+    while (q + 8 <= stop) {
+      const it = ((dv.getUint16(q, true) << 16) | dv.getUint16(q + 2, true)) >>> 0;
+      const il = dv.getUint32(q + 4, true); q += 8;
+      if (it === SEQ_END) break;
+      if (it !== ITEM) throw new Error('Malformed sequence at ' + hex(tag));
+      const iend = il === 0xFFFFFFFF ? stop : q + il;
+      const r = readSet(u8, dv, q, iend, explicit);
+      items.push(r.set); q = il === 0xFFFFFFFF ? r.next : iend;
+    }
+    return { el: { tag, vr: 'SQ', items }, next: undef ? q : p + len };
+  }
+  if (undef) throw new Error('Encapsulated (compressed) pixel data is not supported. Export the spots uncompressed.');
+  return { el: { tag, vr: vr || 'UN', bytes: u8.subarray(p, p + len) }, next: p + len };
+}
+
+// ───────────────────────────────────────────────────────── value helpers ──
+const dec = new TextDecoder('latin1');
+function str(el) { return el && el.bytes ? dec.decode(el.bytes).replace(/[\0 ]+$/, '').trim() : ''; }
+function strs(el) { return str(el).split('\\').map(s => s.trim()); }
+function nums(el) { return el ? strs(el).map(Number).filter(n => !Number.isNaN(n)) : []; }
+function num(el, d = null) { const n = nums(el); return n.length ? n[0] : d; }
+function us(el) {
+  if (!el || !el.bytes) return [];
+  const dv = new DataView(el.bytes.buffer, el.bytes.byteOffset, el.bytes.byteLength), out = [];
+  for (let i = 0; i + 1 < el.bytes.length; i += 2) out.push(dv.getUint16(i, true));
+  return out;
+}
+const g = (set, tag) => set && set.get(tag);
+
+// ─────────────────────────────────────────────────────────── spot loading ──
+function secondsOf(date, time) {
+  if (!date || date.length < 8 || !time) return null;
+  const t = time.split('.')[0].padEnd(6, '0'), frac = time.includes('.') ? Number('0.' + time.split('.')[1]) : 0;
+  return Date.UTC(+date.slice(0, 4), +date.slice(4, 6) - 1, +date.slice(6, 8), +t.slice(0, 2), +t.slice(2, 4), +t.slice(4, 6)) / 1000 + frac;
+}
+
+function loadFrames(buf, filename) {
+  const { ds } = parseDicom(buf);
+  const pix = g(ds, 0x7FE00010);
+  if (!pix || !pix.bytes) throw new Error('no image data');
+  const rows = us(g(ds, 0x00280010))[0], cols = us(g(ds, 0x00280011))[0];
+  const nf = num(g(ds, 0x00280008), 1) || 1;
+  const bits = us(g(ds, 0x00280100))[0] || 16, signed = (us(g(ds, 0x00280103))[0] || 0) === 1;
+  const stored = us(g(ds, 0x00280101))[0] || bits;
+  const spp = us(g(ds, 0x00280002))[0] || 1;
+  if (spp !== 1) throw new Error('colour images are not supported');
+  const slope = num(g(ds, 0x00281053), 1) || 1, icpt = num(g(ds, 0x00281052), 0) || 0;
+  const n = rows * cols, b = pix.bytes, dv = new DataView(b.buffer, b.byteOffset, b.byteLength);
+  if (b.length < n * nf * bits / 8) throw new Error('image data is truncated');
+  const ps = (nums(g(ds, 0x00280030))[0]) || 1;
+  const dur = (num(g(ds, 0x00181242), 0) || 0) / 1000;
+  const acq = secondsOf(str(g(ds, 0x00080022)) || str(g(ds, 0x00080021)), str(g(ds, 0x00080032)) || str(g(ds, 0x00080031)));
+  const label = str(g(ds, 0x0008103E)) || str(g(ds, 0x00540400));
+  const detSeq = (g(ds, 0x00540022) || {}).items || [];
+  const detVec = us(g(ds, 0x00540020));
+  const frames = [];
+  for (let f = 0; f < nf; f++) {
+    const a = new Float32Array(n), off = f * n;
+    for (let i = 0; i < n; i++) {
+      let v;
+      if (bits === 16) {
+        v = dv.getUint16((off + i) * 2, true);
+        if (stored < 16) { v &= (1 << stored) - 1; if (signed && v >= (1 << (stored - 1))) v -= (1 << stored); }
+        else if (signed && v >= 32768) v -= 65536;
+      }
+      else if (bits === 8) v = b[off + i];
+      else v = signed ? dv.getInt32((off + i) * 4, true) : dv.getUint32((off + i) * 4, true);
+      a[i] = v * slope + icpt;
+    }
+    let di = detVec[f] ? detVec[f] - 1 : f;
+    const det = detSeq[di] || detSeq[0] || null;
+    let z = null;
+    for (const src of [det, ds]) {
+      const ipp = src && nums(g(src, 0x00200032));
+      if (ipp && ipp.length >= 3) { z = ipp[2]; break; }
+    }
+    let zMissing = false;
+    if (z === null) { z = num(g(ds, 0x00201041), null); if (z === null) { z = 0; zMissing = true; } }
+    const ang = det ? num(g(det, 0x00540200), null) : null;
+    frames.push({
+      id: filename + '#' + f, filename, ds, data: a, rows, cols, z, zMissing, ps,
+      label: label + (nf > 1 ? ' [frame ' + (f + 1) + ']' : ''), frame: f, duration: dur, acq,
+      det, angle: ang === null ? null : ((ang % 360) + 360) % 360,
+      view: 'ANT', include: true, reason: '', userSet: false, manualOffset: 0,
+    });
+  }
+  return frames;
+}
+
+// ─────────────────────────────────────────────────────────── classifying ──
+const LAT_RE = /\b(R|L|RT|LT|RIGHT|LEFT)?[ _-]?LAT(ERAL)?\b|\bOBL(IQUE)?\b|\b[RL][AP]O\b/i;
+const POST_RE = /\bPOST(ERIOR)?\b/i;
+function labelText(fr) {
+  let stem = fr.filename.split(/[\\/]/).pop().replace(/\.[^.]*$/, '');
+  stem = stem.replace(/^(R|L|RT|LT)?(LAT|ANT|POST|OBL)(?=[A-Z])/i, '$1 $2 ');
+  const parts = [fr.label, stem, str(g(fr.ds, 0x0008103E)), str(g(fr.ds, 0x00540400))];
+  for (const t of [0x00111012, 0x00111030, 0x00111050]) parts.push(str(g(fr.ds, t)));   // GE private view names
+  return parts.join(' ');
+}
+
+function fovRows(frames) {
+  const R = frames[0].rows, C = frames[0].cols, any = new Uint8Array(R);
+  for (const f of frames) {
+    if (f.rows !== R) continue;
+    for (let r = 0; r < R; r++) {
+      if (any[r]) continue;
+      for (let c = 0, o = r * C; c < C; c++) if (f.data[o + c] > 0) { any[r] = 1; break; }
+    }
+  }
+  let r0 = any.indexOf(1), r1 = any.lastIndexOf(1);
+  if (r0 < 0) return [0, R - 1];
+  if (r1 - r0 > 12) { r0 += 1; r1 -= 1; }
+  return [r0, r1];
+}
+
+function obliqueName(fr, txt) {
+  const m = txt.match(/\b([LR][AP]O)\b/i); if (m) return m[1].toUpperCase();
+  if (/\b(R|RT|RIGHT)[ _-]?LAT/i.test(txt)) return 'R LAT';
+  if (/\b(L|LT|LEFT)[ _-]?LAT/i.test(txt)) return 'L LAT';
+  const a = fr.angle !== null ? ' ' + Math.round(fr.angle) + '°' : '';
+  if (/LAT/i.test(txt)) return 'LAT' + a;
+  return 'OBL' + a;
+}
+function viewAngle(v, top) {
+  if (v === 'ANT') return 180; if (v === 'POST') return 0;
+  return top && top.angle !== null ? Math.round(top.angle) : 90;
+}
+function viewOrder(views) {
+  const rest = views.filter(v => v !== 'ANT' && v !== 'POST').sort();
+  return ['ANT', 'POST'].filter(v => views.includes(v)).concat(rest);
+}
+
+function classify(frames, opts = {}) {
+  const { includeOblique = false } = opts;
+  const warnings = [];
+  for (const fr of frames) {
+    if (fr.userSet) continue;
+    const txt = labelText(fr);
+    const it = strs(g(fr.ds, 0x00080008)).map(s => s.toUpperCase());
+    fr.include = true; fr.reason = '';
+    if (it.length > 2 && it[2] && it[2] !== 'STATIC') { fr.view = 'OTHER'; fr.include = false; fr.reason = 'not a static spot (' + it[2].toLowerCase() + ')'; }
+    else if (LAT_RE.test(txt)) { fr.view = includeOblique ? obliqueName(fr, txt) : 'LAT'; if (!includeOblique) { fr.include = false; fr.reason = 'lateral / oblique view'; } }
+    else if (fr.angle !== null && (fr.angle <= 20 || fr.angle >= 340)) fr.view = 'POST';
+    else if (fr.angle !== null && fr.angle >= 160 && fr.angle <= 200) fr.view = 'ANT';
+    else if (fr.angle !== null) { fr.view = includeOblique ? obliqueName(fr, txt) : 'LAT'; if (!includeOblique) { fr.include = false; fr.reason = 'detector angle ' + Math.round(fr.angle) + '°'; } }
+    else fr.view = POST_RE.test(txt) ? 'POST' : 'ANT';
+  }
+  for (const v of [...new Set(frames.filter(f => f.include && f.view !== 'OTHER').map(f => f.view))]) {
+    const grp = frames.filter(f => f.include && f.view === v && !f.userSet).sort((a, b) => b.z - a.z);
+    if (!grp.length) continue;
+    if (grp.length > 1 && (grp.some(f => f.zMissing) || new Set(grp.map(f => f.z.toFixed(1))).size === 1)) continue;   // no usable positions
+    const [r0, r1] = fovRows(grp), fovMM = (r1 - r0) * grp[0].ps;
+    const kept = frames.filter(f => f.include && f.view === v && f.userSet);
+    for (const f of grp) {
+      const clash = kept.find(k => Math.abs(k.z - f.z) < 0.25 * fovMM);
+      if (clash) { f.include = false; f.reason = 'same position as ' + (clash.label || clash.filename); }
+      else kept.push(f);
+    }
+  }
+  const pids = new Set(frames.map(f => str(g(f.ds, 0x00100020))));
+  const studies = new Set(frames.map(f => str(g(f.ds, 0x0020000D))));
+  if (pids.size > 1) warnings.push('These images come from more than one patient ID.');
+  else if (studies.size > 1) warnings.push('These images come from more than one study.');
+  return warnings;
+}
+
+// ───────────────────────────────────────────────────────────── stitching ──
+const HALF_LIVES = { TC99M: 6.0067 * 3600, I123: 13.2234 * 3600, I131: 8.0252 * 86400, GA67: 3.2617 * 86400,
+  IN111: 2.8047 * 86400, TL201: 3.0421 * 86400, LU177: 6.647 * 86400, SM153: 46.284 * 3600, F18: 6586.2, GA68: 4062.6, Y90: 64.05 * 3600 };
+const ELEM = { TECHNETIUM: 'TC', IODINE: 'I', GALLIUM: 'GA', INDIUM: 'IN', THALLIUM: 'TL', LUTETIUM: 'LU', SAMARIUM: 'SM', FLUORINE: 'F', YTTRIUM: 'Y' };
+function nuclideKey(name) {
+  // "^99m^Technetium", "Tc-99m", "99mTc", "TC99M" -> "TC99M"
+  let n = String(name).toUpperCase().replace(/[^A-Z0-9]/g, '');
+  const m = n.match(/(\d+)(M?)/); if (!m) return null;
+  let el = n.replace(/\d+M?/, '');
+  for (const k in ELEM) if (el.includes(k)) el = ELEM[k];
+  return el + m[1] + (m[2] || (n.endsWith('M') && /\d/.test(n.slice(-2, -1)) ? 'M' : ''));
+}
+function halfLife(fr) {
+  const rs = (g(fr.ds, 0x00540016) || {}).items || [];
+  for (const it of rs) {
+    const hl = num(g(it, 0x00181075), null); if (hl) return hl;
+    for (const c of ((g(it, 0x00540300) || {}).items || [])) { const k = nuclideKey(str(g(c, 0x00080104))); if (k && HALF_LIVES[k]) return HALF_LIVES[k]; }
+  }
+  const k = nuclideKey(str(g(fr.ds, 0x0011100D)));
+  return (k && HALF_LIVES[k]) || null;
+}
+
+// Area-weighted 1-D resampling map: for each destination pixel, the source
+// pixels that overlap it and the fraction of each source pixel that falls inside.
+function areaMap(nSrc, psSrc, nDst, psDst, offsetMM) {
+  const map = [];
+  for (let j = 0; j < nDst; j++) {
+    const a = offsetMM + j * psDst, b = a + psDst, list = [];
+    const i0 = Math.max(0, Math.floor(a / psSrc)), i1 = Math.min(nSrc - 1, Math.ceil(b / psSrc) - 1);
+    for (let i = i0; i <= i1; i++) {
+      const ov = Math.min(b, (i + 1) * psSrc) - Math.max(a, i * psSrc);
+      if (ov > 1e-9) list.push(i, ov / psSrc);
+    }
+    map.push(list);
+  }
+  return map;
+}
+// Resample one frame onto a coarser grid (pixel size psT, Ct columns), preserving counts.
+function toGrid(f, psT, Ct) {
+  const zc = f.det ? nums(g(f.det, 0x00280032)) : [];
+  const zcx = zc.length ? zc[0] : 0;
+  const Rt = Math.round(f.rows * f.ps / psT);
+  const xOff = f.cols * f.ps / 2 - zcx - Ct * psT / 2;        // target column 0 in source mm
+  const cm = areaMap(f.cols, f.ps, Ct, psT, xOff), rm = areaMap(f.rows, f.ps, Rt, psT, 0);
+  const tmp = new Float32Array(f.rows * Ct), out = new Float32Array(Rt * Ct);
+  for (let r = 0; r < f.rows; r++) for (let j = 0; j < Ct; j++) {
+    const L = cm[j]; let v = 0; for (let k = 0; k < L.length; k += 2) v += f.data[r * f.cols + L[k]] * L[k + 1]; tmp[r * Ct + j] = v;
+  }
+  for (let i = 0; i < Rt; i++) { const L = rm[i]; for (let j = 0; j < Ct; j++) {
+    let v = 0; for (let k = 0; k < L.length; k += 2) v += tmp[L[k] * Ct + j] * L[k + 1]; out[i * Ct + j] = v; } }
+  return { data: out, rows: Rt, cols: Ct };
+}
+function fovCols(arrs, R, C) {
+  const any = new Uint8Array(C);
+  for (const a of arrs) for (let r = 0; r < R; r++) for (let c = 0; c < C; c++) if (!any[c] && a[r * C + c] > 0) any[c] = 1;
+  let c0 = any.indexOf(1), c1 = any.lastIndexOf(1);
+  if (c0 < 0) return [0, C - 1];
+  if (c1 - c0 > 12) { c0 += 1; c1 -= 1; }
+  return [c0, c1];
+}
+
+function stitch(frames, opts = {}) {
+  const { normaliseTime = true, decayCorrect = true, minRows = 1024, margin = 4, matchZoom = true, blend = 'noise' } = opts;
+  const warnings = classify(frames, opts);
+  const used = frames.filter(f => f.include && f.view !== 'OTHER' && (opts.includeOblique || f.userSet || f.view === 'ANT' || f.view === 'POST'));
+  if (!used.length) throw new Error('No spots to stitch. Include at least one spot.');
+
+  // Common grid: the coarsest pixel size among the spots (the lowest zoom)
+  const psT = Math.max(...used.map(f => f.ps));
+  const mixed = used.some(f => Math.abs(f.ps - psT) > 0.01 * psT || f.cols !== used[0].cols || f.rows !== used[0].rows);
+  if (mixed && !matchZoom) {
+    const odd = used.find(f => Math.abs(f.ps - psT) > 0.01 * psT || f.cols !== used[0].cols || f.rows !== used[0].rows);
+    throw new Error((odd.label || odd.filename) + ' has a different zoom or matrix (' + odd.cols + '×' + odd.rows + ', ' + odd.ps.toFixed(3) +
+      ' mm). Turn on "Match mixed zoom" to resample all spots to ' + psT.toFixed(3) + ' mm.');
+  }
+  const Ct = mixed ? Math.round(Math.max(...used.map(f => f.cols * f.ps)) / psT) : used[0].cols;
+  // Working copy of each frame on the common grid, plus its own useful field of view
+  const W = new Map();
+  const groups = new Map();
+  for (const f of used) {
+    const same = Math.abs(f.ps - psT) <= 0.01 * psT && f.cols === Ct;
+    const w = same ? { data: f.data, rows: f.rows, cols: f.cols } : toGrid(f, psT, Ct);
+    W.set(f, w);
+    const key = f.ps.toFixed(4) + 'x' + f.cols + 'x' + f.rows;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(f);
+  }
+  const zoomGroups = [];
+  for (const [, fs] of groups) {
+    const ws = fs.map(f => W.get(f));
+    const [r0, r1] = fovRows(ws.map(w => ({ data: w.data, rows: w.rows, cols: w.cols })));
+    const [c0, c1] = fovCols(ws.map(w => w.data), ws[0].rows, Ct);
+    for (const f of fs) Object.assign(W.get(f), { r0, r1, c0, c1, narrow: mixed && (c1 - c0 + 1) < Ct - 8 });
+    zoomGroups.push({ ps: fs[0].ps, zoom: fs[0].det ? nums(g(fs[0].det, 0x00280031))[0] || null : null, count: fs.length });
+  }
+  if (mixed) warnings.push('Spots have different zoom: all were resampled to ' + psT.toFixed(3) + ' mm pixels (the lowest zoom). Zoomed spots cover a narrower area, so anything outside them comes only from neighbouring spots.');
+
+  const ps = psT, C = Ct;
+  const views = viewOrder([...new Set(used.map(f => f.view))]);
+  // Table positions; if a view has none, stack its spots in acquisition order with a 20-row overlap
+  const Z = new Map(used.map(f => [f, f.z]));
+  for (const v of views) {
+    const grp = used.filter(f => f.view === v);
+    if (grp.length > 1 && (grp.some(f => f.zMissing) || new Set(grp.map(f => f.z.toFixed(1))).size === 1)) {
+      const inst = f => num(g(f.ds, 0x00200013), 0);
+      grp.sort((p, q) => ((p.acq ?? 0) - (q.acq ?? 0)) || (inst(p) - inst(q)) || p.filename.localeCompare(q.filename));
+      grp.forEach((f, i) => { const w = W.get(f); Z.set(f, -i * ((w.r1 - w.r0 + 1) - 20) * ps); });
+      warnings.push(v + ': no table positions in these files, so spots were stacked in acquisition order. Check the order and nudge the seams.');
+    }
+  }
+  const zRef = Math.max(...used.map(f => Z.get(f)));
+  const durs = used.map(f => f.duration).filter(d => d > 0).sort((a, b) => a - b);
+  const tDur = durs.length ? (durs.length % 2 ? durs[(durs.length - 1) / 2] : (durs[durs.length / 2 - 1] + durs[durs.length / 2]) / 2) : 0;
+  const times = used.map(f => f.acq).filter(t => t !== null);
+  const t0 = times.length ? Math.min(...times) : null;
+  const hl = decayCorrect ? halfLife(used[0]) : null;
+  const scaleOf = f => {
+    let s = 1;
+    if (normaliseTime && tDur > 0 && f.duration > 0) s *= tDur / f.duration;
+    if (hl && t0 !== null && f.acq !== null) s *= Math.pow(2, (f.acq - t0) / hl);
+    return s;
+  };
+  const top = new Map(), chains = {};
+  for (const v of views) {
+    const chain = used.filter(f => f.view === v).sort((a, b) => Z.get(b) - Z.get(a));
+    let shift = 0;
+    chain.forEach((f, i) => { if (i > 0) shift -= f.manualOffset; top.set(f, Math.round((zRef - Z.get(f)) / ps) + shift); });
+    chains[v] = chain;
+  }
+  let first = Infinity, last = -Infinity;
+  for (const f of used) { const w = W.get(f); first = Math.min(first, top.get(f) + w.r0); last = Math.max(last, top.get(f) + w.r1); }
+  first -= margin; last += margin;
+  const height = last - first + 1, outRows = Math.max(height, minRows);
+  const arrays = [], seams = {};
+  for (const v of views) {
+    const acc = new Float64Array(outRows * C), ws = new Float64Array(outRows * C);
+    for (const f of chains[v]) {
+      const w = W.get(f), H = w.r1 - w.r0 + 1, y0 = top.get(f) - first + w.r0, s = scaleOf(f);
+      for (let i = 0; i < H; i++) {
+        const wr = Math.min(i + 1, H - i), src = (w.r0 + i) * C, dst = (y0 + i) * C;
+        if (w.narrow) {                       // zoomed spot: only its own field of view, feathered on all sides
+          for (let c = w.c0; c <= w.c1; c++) {
+            const wi = Math.min(wr, c - w.c0 + 1, w.c1 - c + 1);
+            acc[dst + c] += w.data[src + c] * s * wi; ws[dst + c] += wi;
+          }
+        } else for (let c = 0; c < C; c++) { acc[dst + c] += w.data[src + c] * s * wr; ws[dst + c] += wr; }
+      }
+    }
+    const out = new Float32Array(outRows * C);
+    if (blend === 'average') {
+      for (let k = 0; k < out.length; k++) if (ws[k] > 0) out[k] = acc[k] / ws[k];
+    } else {
+      // Keep the natural noise texture: each overlap pixel comes from ONE spot, picked at random
+      // with probability equal to its cross-fade weight (same mean as averaging, no smoothed band).
+      let seed = 0x9E3779B9 ^ (views.indexOf(v) * 7919);
+      const U = new Float32Array(out.length);
+      for (let k = 0; k < U.length; k++) { seed ^= seed << 13; seed ^= seed >>> 17; seed ^= seed << 5; U[k] = (seed >>> 0) / 4294967296; }
+      const cum = new Float64Array(out.length);
+      for (const f of chains[v]) {
+        const w = W.get(f), H = w.r1 - w.r0 + 1, y0 = top.get(f) - first + w.r0, s = scaleOf(f);
+        for (let i = 0; i < H; i++) {
+          const wr = Math.min(i + 1, H - i), src = (w.r0 + i) * C, dst = (y0 + i) * C;
+          const cA = w.narrow ? w.c0 : 0, cB = w.narrow ? w.c1 : C - 1;
+          for (let c = cA; c <= cB; c++) {
+            const k = dst + c; if (!(ws[k] > 0)) continue;
+            const wi = w.narrow ? Math.min(wr, c - w.c0 + 1, w.c1 - c + 1) : wr;
+            const lo = cum[k] / ws[k]; cum[k] += wi; const hi = cum[k] / ws[k];
+            if (U[k] >= lo && U[k] < hi) out[k] = w.data[src + c] * s;
+          }
+        }
+      }
+    }
+    arrays.push(out);
+    seams[v] = [];
+    const ch = chains[v];
+    for (let i = 1; i < ch.length; i++) {
+      const wa = W.get(ch[i - 1]), wb = W.get(ch[i]);
+      const a = top.get(ch[i - 1]) - first + wa.r0, b = top.get(ch[i]) - first + wb.r0;
+      const overlap = a + (wa.r1 - wa.r0 + 1) - b;
+      seams[v].push({ upper: ch[i - 1], lower: ch[i], row: b, overlap });
+      if (overlap < 0) warnings.push(v + ': gap of ' + (-overlap) + ' rows (' + Math.round(-overlap * ps) + ' mm) between ' + (ch[i - 1].label || ch[i - 1].filename) + ' and ' + (ch[i].label || ch[i].filename) + '.');
+    }
+  }
+  const zoomRef = used.find(f => Math.abs(f.ps - psT) <= 0.01 * psT) || used[0];
+  return { arrays, views, rows: outRows, cols: C, ps, used, warnings, seams, chains, mixedZoom: mixed, zoomGroups, zoomRef,
+    topZ: zRef - first * ps, fov: [W.get(used[0]).r0, W.get(used[0]).r1], contentRows: height, decay: !!hl, tDur };
+}
+
+// ─────────────────────────────────────────────────────────────── writing ──
+const enc = new TextEncoder();
+function pad(bytes, vr) {
+  if (bytes.length % 2 === 0) return bytes;
+  const out = new Uint8Array(bytes.length + 1); out.set(bytes); out[bytes.length] = (vr === 'UI' || vr === 'OB' || vr === 'UN') ? 0 : 0x20; return out;
+}
+const S = (vr, s) => ({ vr, bytes: pad(enc.encode(String(s)), vr) });
+const DSv = arr => S('DS', [].concat(arr).map(x => typeof x === 'number' ? (+x.toFixed(6)).toString().slice(0, 16) : x).join('\\'));
+const ISv = x => S('IS', String(Math.round(x)));
+function U16(arr) { arr = [].concat(arr); const b = new Uint8Array(arr.length * 2), dv = new DataView(b.buffer); arr.forEach((v, i) => dv.setUint16(i * 2, v, true)); return { vr: 'US', bytes: b }; }
+function ATv(tags) { const b = new Uint8Array(tags.length * 4), dv = new DataView(b.buffer); tags.forEach((t, i) => { dv.setUint16(i * 4, t >>> 16, true); dv.setUint16(i * 4 + 2, t & 0xFFFF, true); }); return { vr: 'AT', bytes: b }; }
+const SQv = items => ({ vr: 'SQ', items });
+
+function cloneSet(set, explicit) {
+  // Keep elements whose VR is known (explicit input or dictionary); drop the rest.
+  const out = new Map();
+  for (const [t, el] of set) {
+    if ((t >>> 16) % 2 === 1) continue;                 // private
+    if ((t & 0xFFFF) === 0) continue;                   // group length
+    const vr = el.vr === 'SQ' ? 'SQ' : (explicit && el.vr !== 'UN' ? el.vr : DICT[t]);
+    if (!vr) continue;
+    out.set(t, vr === 'SQ' ? { tag: t, vr, items: (el.items || []).map(s => cloneSet(s, explicit)) } : { tag: t, vr, bytes: el.bytes });
+  }
+  return out;
+}
+
+function writeSet(set, chunks, implicit = false) {
+  const tags = [...set.keys()].sort((a, b) => a - b);
+  for (const t of tags) {
+    const el = set.get(t);
+    if (el.vr === 'SQ') {
+      const inner = [];
+      for (const it of el.items) {
+        const ic = []; writeSet(it, ic, implicit);
+        const il = ic.reduce((s, c) => s + c.length, 0);
+        inner.push(hdrItem(il), ...ic);
+      }
+      const len = inner.reduce((s, c) => s + c.length, 0);
+      chunks.push(hdr(t, 'SQ', len, implicit), ...inner);
+    } else {
+      const vr = el.vr && el.vr !== 'UN' ? el.vr : (DICT[t] || 'UN');
+      const b = pad(el.bytes || new Uint8Array(0), vr);
+      chunks.push(hdr(t, vr, b.length, implicit), b);
+    }
+  }
+}
+function hdr(tag, vr, len, implicit = false) {
+  if (implicit) {
+    const b = new Uint8Array(8), dv = new DataView(b.buffer);
+    dv.setUint16(0, tag >>> 16, true); dv.setUint16(2, tag & 0xFFFF, true); dv.setUint32(4, len, true);
+    return b;
+  }
+  const long = LONG_VR.has(vr), b = new Uint8Array(long ? 12 : 8), dv = new DataView(b.buffer);
+  dv.setUint16(0, tag >>> 16, true); dv.setUint16(2, tag & 0xFFFF, true);
+  b[4] = vr.charCodeAt(0); b[5] = vr.charCodeAt(1);
+  if (long) dv.setUint32(8, len, true); else dv.setUint16(6, len, true);
+  return b;
+}
+function hdrItem(len) { const b = new Uint8Array(8), dv = new DataView(b.buffer); dv.setUint16(0, 0xFFFE, true); dv.setUint16(2, 0xE000, true); dv.setUint32(4, len, true); return b; }
+
+function newUID() {
+  // 2.25.<128-bit random as decimal>
+  const r = new Uint8Array(16); (globalThis.crypto || require('crypto').webcrypto).getRandomValues(r);
+  let n = 0n; for (const x of r) n = (n << 8n) | BigInt(x);
+  return '2.25.' + n.toString();
+}
+function nowParts() {
+  const d = new Date(), p = x => String(x).padStart(2, '0');
+  return { date: d.getFullYear() + p(d.getMonth() + 1) + p(d.getDate()), time: p(d.getHours()) + p(d.getMinutes()) + p(d.getSeconds()) };
+}
+
+// Standard header elements copied from the reference spot (everything else is rebuilt).
+const COPY = [0x00080005,0x00080016,0x00080020,0x00080030,0x00080050,0x00080060,0x00080070,0x00080080,0x00080090,
+  0x00081010,0x00081030,0x00081070,0x00081090,0x00100010,0x00100020,0x00100030,0x00100040,0x00101010,0x00101020,0x00101030,
+  0x00181000,0x00181020,0x00181030,0x00181242,0x0020000D,0x00200010,0x00200052,0x00201040,
+  0x00540012,0x00540016,0x00540410,0x00540414];
+
+function buildDicom(res) {
+  const ref = [...res.used].sort((a, b) => (a.view !== 'ANT') - (b.view !== 'ANT') || b.z - a.z)[0];
+  const src = cloneSet(ref.ds, true);
+  const ds = new Map();
+  for (const t of COPY) if (src.has(t)) ds.set(t, src.get(t));
+  const n = res.arrays.length, N = res.rows * res.cols;
+  const pix = new Uint8Array(N * n * 2), pdv = new DataView(pix.buffer);
+  let vmax = 0, vmin = 65535, total = 0;
+  res.arrays.forEach((a, f) => { for (let i = 0; i < N; i++) {
+    const v = Math.min(65535, Math.max(0, Math.round(a[i]))); pdv.setUint16((f * N + i) * 2, v, true);
+    if (v > vmax) vmax = v; if (v < vmin) vmin = v; total += v; } });
+  const sop = ds.has(0x00080016) ? str(ds.get(0x00080016)) : '1.2.840.10008.5.1.4.1.1.20';
+  const inst = newUID(), now = nowParts();
+  const set = (t, v) => ds.set(t, Object.assign({ tag: t }, v));
+  set(0x00080008, S('CS', 'DERIVED\\PRIMARY\\WHOLE BODY\\EMISSION'));
+  set(0x00080012, S('DA', now.date)); set(0x00080013, S('TM', now.time));
+  set(0x00080016, S('UI', sop)); set(0x00080018, S('UI', inst));
+  set(0x00080021, S('DA', now.date)); set(0x00080023, S('DA', now.date));
+  set(0x00080031, S('TM', now.time)); set(0x00080033, S('TM', now.time));
+  if (!ds.has(0x00080060)) set(0x00080060, S('CS', 'NM'));
+  set(0x0008103E, S('LO', 'WB Stitched'));
+  set(0x00082111, S('ST', 'Whole-body image stitched from planar spot views (OmniStitch)'));
+  const seen = new Set(), srcItems = [];
+  for (const f of res.used) { const u = str(g(f.ds, 0x00080018)); if (u && !seen.has(u)) { seen.add(u);
+    srcItems.push(new Map([[0x00081150, Object.assign({ tag: 0x00081150 }, S('UI', str(g(f.ds, 0x00080016)) || sop))], [0x00081155, Object.assign({ tag: 0x00081155 }, S('UI', u))]])); } }
+  if (srcItems.length) set(0x00082112, SQv(srcItems));
+  set(0x00180015, S('CS', 'WHOLEBODY'));
+  set(0x00180070, ISv(Math.min(total, 2147483647)));
+  if (!ds.has(0x0020000D)) set(0x0020000D, S('UI', newUID()));
+  set(0x0020000E, S('UI', newUID()));
+  set(0x00200011, ISv(900 + (num(g(ref.ds, 0x00200011), 0) % 100)));
+  set(0x00200013, ISv(1));
+  set(0x00204000, S('LT', 'Generated by OmniStitch from spot images - verify before diagnostic use'));
+  set(0x00280002, U16(1)); set(0x00280004, S('CS', 'MONOCHROME2'));
+  set(0x00280008, ISv(n)); set(0x00280009, ATv([0x00540010, 0x00540020]));
+  set(0x00280010, U16(res.rows)); set(0x00280011, U16(res.cols));
+  set(0x00280030, DSv([res.ps, res.ps]));
+  set(0x00280100, U16(16)); set(0x00280101, U16(16)); set(0x00280102, U16(15)); set(0x00280103, U16(0));
+  set(0x00280106, U16(vmin)); set(0x00280107, U16(vmax));
+  set(0x00281050, DSv(vmax / 2)); set(0x00281051, DSv(Math.max(vmax, 1)));
+  set(0x00540010, U16(new Array(n).fill(1)));
+  if (!ds.has(0x00540011)) set(0x00540011, U16(1));
+  set(0x00540020, U16(res.views.map((_, i) => i + 1))); set(0x00540021, U16(n));
+  const dets = res.views.map(v => {
+    const top = res.chains[v][0];
+    const it = top.det ? cloneSet(top.det, true) : new Map();
+    const ipp = top.det ? nums(g(top.det, 0x00200032)) : [];
+    const p = [ipp[0] || 0, ipp[1] || 0, res.topZ];
+    it.set(0x00200032, Object.assign({ tag: 0x00200032 }, DSv(p)));
+    if (res.mixedZoom && res.zoomRef && res.zoomRef.det) for (const t of [0x00280031, 0x00280032]) { const e = g(res.zoomRef.det, t); if (e) it.set(t, { tag: t, vr: 'DS', bytes: e.bytes }); }
+    it.set(0x00540200, Object.assign({ tag: 0x00540200 }, S('DS', String(viewAngle(v, top)))));
+    return it;
+  });
+  set(0x00540022, SQv(dets));
+  set(0x00540400, S('SH', 'WB STITCHED'));
+  set(0x7FE00010, { vr: 'OW', bytes: pix });
+
+  return wrapFile(ds, sop, inst, false);
+}
+
+function wrapFile(ds, sop, inst, implicit) {
+  const body = []; writeSet(ds, body, implicit);
+  const meta = new Map();
+  const ms = (t, v) => meta.set(t, Object.assign({ tag: t }, v));
+  ms(0x00020001, { vr: 'OB', bytes: new Uint8Array([0, 1]) });
+  ms(0x00020002, S('UI', sop)); ms(0x00020003, S('UI', inst));
+  ms(0x00020010, S('UI', implicit ? '1.2.840.10008.1.2' : '1.2.840.10008.1.2.1'));
+  ms(0x00020012, S('UI', '1.2.826.0.1.3680043.10.1497.1'));
+  ms(0x00020013, S('SH', 'OMNISTITCH_2'));
+  const mchunks = []; writeSet(meta, mchunks);
+  const mlen = mchunks.reduce((s, c) => s + c.length, 0);
+  const gl = new Uint8Array(12), gdv = new DataView(gl.buffer);
+  gdv.setUint16(0, 2, true); gdv.setUint16(2, 0, true); gl[4] = 85; gl[5] = 76; gdv.setUint16(6, 4, true); gdv.setUint32(8, mlen, true);
+  const pre = new Uint8Array(132); pre.set([68, 73, 67, 77], 128);
+  const parts = [pre, gl, ...mchunks, ...body];
+  const out = new Uint8Array(parts.reduce((s, c) => s + c.length, 0));
+  let o = 0; for (const c of parts) { out.set(c, o); o += c.length; }
+  return out;
+}
+
+
+// ─────────────────────────────────────────────── vendor WB template ──
+// A sample whole-body file from the user's camera. Its header layout,
+// vendor private tags, transfer syntax and (optionally) matrix/pixel size
+// are reused; identity, study, acquisition and pixel data come from the spots.
+const TEXT_VR = new Set(['AE','AS','CS','DA','DS','DT','IS','LO','LT','PN','SH','ST','TM','UC','UI','UR','UT']);
+const UID_RE = /\b[12](?:\.\d{1,20}){4,}\b/g;
+
+function loadTemplate(buf, name) {
+  const p = parseDicom(buf);
+  const ds = p.ds;
+  const rows = us(g(ds, 0x00280010))[0], cols = us(g(ds, 0x00280011))[0];
+  if (!rows || !cols) throw new Error('This file has no image matrix.');
+  const it = strs(g(ds, 0x00080008)).map(x => x.toUpperCase());
+  const ts = p.meta.has(0x00020010) ? str(p.meta.get(0x00020010)) : '1.2.840.10008.1.2';
+  return {
+    name, ds, implicit: ts === '1.2.840.10008.1.2', rows, cols,
+    ps: nums(g(ds, 0x00280030))[0] || 1,
+    frames: num(g(ds, 0x00280008), 1) || 1,
+    isWB: it.includes('WHOLE BODY'),
+    maker: [str(g(ds, 0x00080070)), str(g(ds, 0x00081090))].filter(Boolean).join(' '),
+    label: str(g(ds, 0x0008103E)) || str(g(ds, 0x00540400)),
+    privateGroups: [...new Set([...ds.keys()].filter(t => (t >>> 16) % 2 === 1 && (t & 0xFFFF) >= 0x10 && (t & 0xFFFF) <= 0xFF).map(t => str(ds.get(t))))].filter(Boolean),
+  };
+}
+
+function deepCopy(set) {
+  const out = new Map();
+  for (const [t, el] of set) {
+    if ((t & 0xFFFF) === 0) continue;                       // group lengths are recomputed by readers
+    out.set(t, el.vr === 'SQ' ? { tag: t, vr: 'SQ', items: el.items.map(deepCopy) } : { tag: t, vr: el.vr, bytes: el.bytes });
+  }
+  return out;
+}
+
+function textOfEl(t, el) {
+  if (!el.bytes || !el.bytes.length) return null;
+  const vr = el.vr && el.vr !== 'UN' ? el.vr : DICT[t];
+  if (vr && !TEXT_VR.has(vr) && vr !== 'OB' && vr !== 'UN') return null;
+  const txt = dec.decode(el.bytes);
+  if (!vr || vr === 'UN' || vr === 'OB') { let pr = 0; for (const ch of txt) if (ch >= ' ' && ch <= '~') pr++; if (pr < txt.length * 0.85) return null; }
+  return txt;
+}
+
+// Resample WB arrays to a new pixel size / matrix, preserving total counts.
+function resample(res, psOut, colsOut, rowsMin) {
+  const ps = res.ps, C = res.cols, R = res.rows, k = (psOut / ps) ** 2;
+  const contentOut = Math.ceil(res.contentRows * ps / psOut);
+  const rowsOut = Math.max(rowsMin, contentOut);
+  const xOff = (C * ps - colsOut * psOut) / 2;            // keep the body centred
+  const arrays = res.arrays.map(a => {
+    const out = new Float32Array(rowsOut * colsOut);
+    for (let i = 0; i < rowsOut; i++) {
+      const fy = ((i + 0.5) * psOut) / ps - 0.5, y0 = Math.floor(fy), wy = fy - y0;
+      for (let j = 0; j < colsOut; j++) {
+        const fx = (xOff + (j + 0.5) * psOut) / ps - 0.5, x0 = Math.floor(fx), wx = fx - x0;
+        let v = 0;
+        for (const [yy, wyy] of [[y0, 1 - wy], [y0 + 1, wy]]) for (const [xx, wxx] of [[x0, 1 - wx], [x0 + 1, wx]])
+          if (yy >= 0 && yy < R && xx >= 0 && xx < C) v += a[yy * C + xx] * wyy * wxx;
+        out[i * colsOut + j] = v * k;
+      }
+    }
+    return out;
+  });
+  return Object.assign({}, res, { arrays, ps: psOut, cols: colsOut, rows: rowsOut, contentRows: contentOut });
+}
+
+function buildFromTemplate(res0, tpl, opts = {}) {
+  const { matchGeometry = true } = opts;
+  const res = matchGeometry && (Math.abs(tpl.ps - res0.ps) > 1e-4 || tpl.cols !== res0.cols || tpl.rows > res0.rows)
+    ? resample(res0, tpl.ps, tpl.cols, tpl.rows) : res0;
+  const ref = [...res.used].sort((a, b) => (a.view !== 'ANT') - (b.view !== 'ANT') || b.z - a.z)[0];
+  const T = tpl.ds, R = ref.ds;
+  const ds = deepCopy(T);
+  const n = res.arrays.length;
+
+  // 1. Remove anything that would describe the template's own image or patient
+  for (const t of [...ds.keys()]) {
+    const grp = t >>> 16;
+    if (grp === 0x0010 || grp === 0x0088 || (grp >= 0x6000 && grp <= 0x60FF) || (grp === 0x7FE0 && t !== 0x7FE00010)) ds.delete(t);
+  }
+  for (const t of [0x00081110, 0x00081111, 0x00081120, 0x00081140, 0x00082112, 0x00400275, 0x00321064, 0x00400270,
+                   0x00281052, 0x00281053, 0x00281054, 0x00080018, 0x0020000E]) ds.delete(t);
+
+  // 3. Scrub template identifiers hiding in vendor tags; map template UIDs to new ones
+  const tokens = [];
+  for (const tg of [0x00100010, 0x00101001]) for (const p of strs(g(T, tg)).join(' ').split(/[\^ ,=]+/)) if (p.length >= 3) tokens.push(p.toUpperCase());
+  for (const tg of [0x00100020, 0x00101000, 0x00080050, 0x00100030]) { const v = str(g(T, tg)); if (v.length >= 3) tokens.push(v.toUpperCase()); }
+  const sopNew = newUID(), seriesNew = newUID();
+  const uidMap = new Map([[str(g(T, 0x0020000D)), str(g(R, 0x0020000D)) || newUID()], [str(g(T, 0x0020000E)), seriesNew],
+    [str(g(T, 0x00080018)), sopNew], [str(g(T, 0x00200052)), str(g(R, 0x00200052)) || newUID()]]);
+  uidMap.delete('');
+  const mapUID = u => { if (u.startsWith('1.2.840.10008.')) return u; if (!uidMap.has(u)) uidMap.set(u, newUID()); return uidMap.get(u); };
+  let scrubbed = 0;
+  const scrub = (set, spotSet) => {
+    for (const [t, el] of [...set]) {
+      if (el.vr === 'SQ') { const sp = spotSet && g(spotSet, t); el.items.forEach((it, i) => scrub(it, sp && sp.items ? sp.items[i] : null)); continue; }
+      if ((t >>> 16) === 0x7FE0) continue;
+      const txt = textOfEl(t, el); if (txt === null) continue;
+      const up = txt.toUpperCase();
+      if (tokens.some(k => up.includes(k))) {
+        const sp = spotSet && g(spotSet, t);
+        set.set(t, { tag: t, vr: el.vr, bytes: sp && sp.bytes ? sp.bytes : new Uint8Array(0) }); scrubbed++; continue;
+      }
+      if (UID_RE.test(txt)) { UID_RE.lastIndex = 0;
+        const nt = txt.replace(UID_RE, m => mapUID(m));
+        if (nt !== txt) set.set(t, { tag: t, vr: el.vr, bytes: enc.encode(nt.replace(/\0+$/, '')) });
+      }
+      UID_RE.lastIndex = 0;
+    }
+  };
+  scrub(ds, R);
+
+  // 2. Patient / study / acquisition identity from the spots
+  for (const [t, el] of R) if ((t >>> 16) === 0x0010) ds.set(t, el.vr === 'SQ' ? { tag: t, vr: 'SQ', items: el.items.map(deepCopy) } : { tag: t, vr: el.vr, bytes: el.bytes });
+  const FROM_SPOT = [0x00080005, 0x00080020, 0x00080022, 0x00080030, 0x00080032, 0x00080050, 0x00080080, 0x00080081, 0x00080090,
+    0x00081010, 0x00081030, 0x00081040, 0x00081050, 0x00081060, 0x00081070, 0x00181000, 0x00181020,
+    0x0020000D, 0x00200010, 0x00200052, 0x00201040, 0x00321060, 0x00400244, 0x00400245, 0x00400253, 0x00400254,
+    0x00081110, 0x00081111, 0x00081120, 0x00400275, 0x00540011, 0x00540012, 0x00540016, 0x00181242];
+  for (const t of FROM_SPOT) { const el = g(R, t); if (el) ds.set(t, el.vr === 'SQ' ? { tag: t, vr: 'SQ', items: el.items.map(deepCopy) } : { tag: t, vr: el.vr, bytes: el.bytes }); else if (t !== 0x00080005) ds.delete(t); }
+
+  // 4. Image, geometry and this series
+  const N = res.rows * res.cols, pix = new Uint8Array(N * n * 2), pdv = new DataView(pix.buffer);
+  let vmax = 0, vmin = 65535, total = 0;
+  res.arrays.forEach((a, f) => { for (let i = 0; i < N; i++) { const v = Math.min(65535, Math.max(0, Math.round(a[i]))); pdv.setUint16((f * N + i) * 2, v, true); if (v > vmax) vmax = v; if (v < vmin) vmin = v; total += v; } });
+  const set = (t, v) => ds.set(t, Object.assign({ tag: t }, v));
+  const keep = (t, v) => { if (ds.has(t)) set(t, v); };
+  const sop = str(g(T, 0x00080016)) || '1.2.840.10008.5.1.4.1.1.20', now = nowParts();
+  set(0x00080016, S('UI', sop)); set(0x00080018, S('UI', sopNew)); set(0x0020000E, S('UI', seriesNew));
+  set(0x00080012, S('DA', now.date)); set(0x00080013, S('TM', now.time));
+  set(0x00080021, S('DA', now.date)); set(0x00080031, S('TM', now.time));
+  set(0x00080023, S('DA', now.date)); set(0x00080033, S('TM', now.time));
+  set(0x0008103E, S('LO', 'WB Stitched'));
+  set(0x00200011, ISv(900 + (num(g(R, 0x00200011), 0) % 100))); set(0x00200013, ISv(1));
+  set(0x00180070, ISv(Math.min(total, 2147483647)));
+  set(0x00280008, ISv(n)); set(0x00280010, U16(res.rows)); set(0x00280011, U16(res.cols)); set(0x00280030, DSv([res.ps, res.ps]));
+  set(0x00280002, U16(1)); set(0x00280004, S('CS', 'MONOCHROME2'));
+  set(0x00280100, U16(16)); set(0x00280101, U16(16)); set(0x00280102, U16(15)); set(0x00280103, U16(0));
+  keep(0x00280106, U16(vmin)); keep(0x00280107, U16(vmax));
+  set(0x00281050, DSv(vmax / 2)); set(0x00281051, DSv(Math.max(vmax, 1)));
+  if (!ds.has(0x00280009)) set(0x00280009, ATv([0x00540010, 0x00540020]));
+  set(0x00540010, U16(new Array(n).fill(1))); set(0x00540020, U16(res.views.map((_, i) => i + 1))); set(0x00540021, U16(n));
+  const lenMM = Math.round(res.contentRows * res.ps);
+  // GE-style WB headers store the scan length as the detector Z position; follow whichever convention the template uses
+  const tDet = (g(T, 0x00540022) || {}).items || [];
+  const tZ = tDet.length ? nums(g(tDet[0], 0x00200032))[2] : null, tLen = num(g(T, 0x00181302), null);
+  const zLikeLength = tZ !== null && tLen !== null && Math.abs(tZ - tLen) < 2;
+  keep(0x00181302, ISv(lenMM));
+  if (zLikeLength) keep(0x00181131, DSv(lenMM));
+  const dets = res.views.map(v => {
+    const want = viewAngle(v, res.chains[v][0]);
+    const src = tDet.find(it => Math.round(num(g(it, 0x00540200), -1)) % 360 === want) || tDet[res.views.indexOf(v)] || tDet[0];
+    const it = src ? deepCopy(src) : new Map();
+    const ipp = src ? nums(g(src, 0x00200032)) : [];
+    const z = zLikeLength ? lenMM : res.topZ;
+    it.set(0x00200032, Object.assign({ tag: 0x00200032 }, DSv([ipp[0] || 0, ipp[1] || 0, z])));
+    it.set(0x00540200, Object.assign({ tag: 0x00540200 }, S('DS', String(want))));
+    if (res.mixedZoom && !matchGeometry && res.zoomRef && res.zoomRef.det) for (const t of [0x00280031, 0x00280032]) { const e = g(res.zoomRef.det, t); if (e) it.set(t, { tag: t, vr: 'DS', bytes: e.bytes }); }
+    return it;
+  });
+  set(0x00540022, SQv(dets));
+  const seen = new Set(), srcItems = [];
+  for (const f of res.used) { const u = str(g(f.ds, 0x00080018)); if (u && !seen.has(u)) { seen.add(u);
+    srcItems.push(new Map([[0x00081150, Object.assign({ tag: 0x00081150 }, S('UI', str(g(f.ds, 0x00080016)) || sop))], [0x00081155, Object.assign({ tag: 0x00081155 }, S('UI', u))]])); } }
+  if (srcItems.length) set(0x00082112, SQv(srcItems));
+  set(0x00082111, S('ST', 'Whole-body image stitched from planar spot views (OmniStitch), header modelled on a ' + (tpl.maker || 'vendor') + ' WB template'));
+  set(0x7FE00010, { vr: 'OW', bytes: pix });
+  const bytes = wrapFile(ds, sop, sopNew, tpl.implicit);
+  return { bytes, resampled: res !== res0, rows: res.rows, cols: res.cols, ps: res.ps, scrubbed };
+}
+
+// ─────────────────────────────────────────────────────────── zip (store) ──
+const CRC = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+function crc32(b) { let c = 0xFFFFFFFF; for (let i = 0; i < b.length; i++) c = CRC[(c ^ b[i]) & 0xFF] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+function zip(files) {
+  const parts = [], central = []; let off = 0;
+  for (const { name, data } of files) {
+    const nb = enc.encode(name), crc = crc32(data);
+    const lh = new Uint8Array(30 + nb.length), l = new DataView(lh.buffer);
+    l.setUint32(0, 0x04034b50, true); l.setUint16(4, 20, true); l.setUint32(14, crc, true);
+    l.setUint32(18, data.length, true); l.setUint32(22, data.length, true); l.setUint16(26, nb.length, true); lh.set(nb, 30);
+    const ch = new Uint8Array(46 + nb.length), c = new DataView(ch.buffer);
+    c.setUint32(0, 0x02014b50, true); c.setUint16(4, 20, true); c.setUint16(6, 20, true); c.setUint32(16, crc, true);
+    c.setUint32(20, data.length, true); c.setUint32(24, data.length, true); c.setUint16(28, nb.length, true); c.setUint32(42, off, true); ch.set(nb, 46);
+    parts.push(lh, data); central.push(ch); off += lh.length + data.length;
+  }
+  const clen = central.reduce((s, c) => s + c.length, 0), end = new Uint8Array(22), e = new DataView(end.buffer);
+  e.setUint32(0, 0x06054b50, true); e.setUint16(8, files.length, true); e.setUint16(10, files.length, true); e.setUint32(12, clen, true); e.setUint32(16, off, true);
+  const all = [...parts, ...central, end], out = new Uint8Array(all.reduce((s, c) => s + c.length, 0));
+  let o = 0; for (const c of all) { out.set(c, o); o += c.length; }
+  return out;
+}
+
+// ─────────────────────────────────────────────── synthetic demo phantom ──
+// A stylised bone-scan phantom (NOT patient data) acquired as ANT/POST spots.
+function phantomSpots() {
+  let seed = 20261004; const rnd = () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296);
+  const gauss = () => { let u = 0, v = 0; while (!u) u = rnd(); v = rnd(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); };
+  const poisson = l => { if (l <= 0) return 0; if (l > 30) return Math.max(0, Math.round(l + Math.sqrt(l) * gauss())); let L = Math.exp(-l), k = 0, p = 1; do { k++; p *= rnd(); } while (p > L); return k - 1; };
+  const C = 256, BH = 860, ps = 2.20903;
+  const mk = () => new Float32Array(BH * C);
+  const blob = (m, cx, cy, rx, ry, a) => { for (let y = Math.max(0, Math.floor(cy - 3 * ry)); y < Math.min(BH, cy + 3 * ry); y++) for (let x = Math.max(0, Math.floor(cx - 3 * rx)); x < Math.min(C, cx + 3 * rx); x++) { const d = ((x - cx) / rx) ** 2 + ((y - cy) / ry) ** 2; if (d < 9) m[y * C + x] += a * Math.exp(-d / 2); } };
+  const ell = (m, cx, cy, rx, ry, a, ring) => { for (let y = Math.max(0, Math.floor(cy - ry - 2)); y < Math.min(BH, cy + ry + 2); y++) for (let x = Math.max(0, Math.floor(cx - rx - 2)); x < Math.min(C, cx + rx + 2); x++) { const d = Math.sqrt(((x - cx) / rx) ** 2 + ((y - cy) / ry) ** 2); if (ring ? Math.abs(d - 1) < ring : d <= 1) m[y * C + x] += a; } };
+  const seg = (m, x0, y0, x1, y1, w, a) => { const L = Math.hypot(x1 - x0, y1 - y0), n = Math.max(1, Math.ceil(L / (w * 0.9))); for (let i = 0; i <= n; i++) blob(m, x0 + (x1 - x0) * i / n, y0 + (y1 - y0) * i / n, w, w, a * 0.42); };
+  const body = (m) => {           // soft tissue
+    ell(m, 128, 70, 34, 42, 1.0); seg(m, 128, 105, 128, 130, 14, 4);
+    for (let y = 130; y < 470; y++) { const hw = y < 160 ? 40 + (y - 130) * 1.1 : y < 330 ? 72 - (y - 160) * 0.08 : 60 + (y - 330) * 0.15; for (let x = Math.round(128 - hw); x < 128 + hw; x++) m[y * C + x] += 1.0; }
+    for (let s of [-1, 1]) { seg(m, 128 + s * 74, 150, 128 + s * 92, 300, 12, 9); seg(m, 128 + s * 92, 300, 128 + s * 100, 420, 10, 7);
+      for (let y = 470; y < 830; y++) { const cx = 128 + s * (34 - (y - 470) * 0.035), hw = 30 - (y - 470) * 0.045; for (let x = Math.round(cx - hw); x < cx + hw; x++) m[y * C + x] += 0.9; } }
+  };
+  const bones = (m, post) => {
+    ell(m, 128, 70, 30, 38, 8, 0.16); blob(m, 128, 70, 20, 26, 2); blob(m, 128, 94, 15, 8, post ? 3 : 8);   // skull, face/mandible
+    for (let i = 0; i < 24; i++) blob(m, 128, 112 + i * 13.5, 6, 5, post ? 22 : 9);       // spine
+    for (let i = 0; i < 10; i++) for (let s of [-1, 1]) {                                 // ribs
+      const y = 158 + i * 15; for (let t = 0; t < 1; t += 0.04) { const x = 128 + s * (8 + 56 * Math.sin(t * Math.PI * 0.55)), yy = y + 22 * t * t; blob(m, x, yy, 2.2, 2.2, post ? 2.2 : 1.6); } }
+    for (let s of [-1, 1]) {
+      seg(m, 128 + s * 14, 145, 128 + s * 66, 148, 3, 14);                               // clavicles
+      blob(m, 128 + s * 70, 156, 9, 9, 24);                                               // shoulders
+      seg(m, 128 + s * 74, 160, 128 + s * 92, 298, 3, 6); seg(m, 128 + s * 92, 302, 128 + s * 99, 415, 2.5, 4.5);   // arms
+      blob(m, 128 + s * 38, 392, 20, 13, 9); blob(m, 128 + s * 50, 380, 8, 10, 7); blob(m, 128 + s * 16, 396, 5, 14, 16);  // iliac wings, SI joints
+      seg(m, 128 + s * 30, 418, 128 + s * 6, 448, 3, 9); blob(m, 128 + s * 38, 436, 8, 8, 16);   // pubic rami, hips
+      seg(m, 128 + s * 38, 440, 128 + s * 26, 640, 3.5, 13); blob(m, 128 + s * 26, 650, 11, 9, 20);   // femur, knee
+      seg(m, 128 + s * 26, 662, 128 + s * 18, 800, 3, 11); blob(m, 128 + s * 18, 815, 12, 8, 14);     // tibia, foot
+      if (post) blob(m, 128 + s * 40, 300, 10, 18, 6);                                    // kidneys
+    }
+    blob(m, 128, 432, 15, 12, post ? 18 : 45);                                            // bladder
+    blob(m, 128, 214, 10, 10, post ? 0 : 6);                                               // sternum
+  };
+  const files = [];
+  const ant = mk(), pst = mk(); body(ant); body(pst); bones(ant, false); bones(pst, true);
+  const tops = [0, 150, 300, 455, 610], names = ['SKULL', 'CHEST', 'PELVIS', 'FEMURS', 'KNEES'];
+  const zTop = 2200, R = 256, F0 = 38, FH = 180;
+  const study = newUID(), frameOfRef = newUID();
+  let clock = 9 * 3600;
+  const make = (map, view, name, top, angle, latLabel) => {
+    const pix = new Uint16Array(R * C);
+    for (let r = 0; r < FH; r++) { const y = top + r; if (y >= BH) break; for (let x = 5; x < 251; x++) pix[(F0 + r) * C + x] = poisson(map[y * C + x] * 0.9); }
+    const z = zTop - (top - F0) * ps;
+    const ds = new Map(); const s = (t, v) => ds.set(t, Object.assign({ tag: t }, v));
+    s(0x00080008, S('CS', 'ORIGINAL\\PRIMARY\\STATIC\\EMISSION')); s(0x00080016, S('UI', '1.2.840.10008.5.1.4.1.1.20')); s(0x00080018, S('UI', newUID()));
+    s(0x00080020, S('DA', '20260101')); s(0x00080022, S('DA', '20260101'));
+    const hh = Math.floor(clock / 3600), mm = Math.floor(clock % 3600 / 60), sss = clock % 60; clock += 200;
+    s(0x00080032, S('TM', String(hh).padStart(2, '0') + String(mm).padStart(2, '0') + String(sss).padStart(2, '0')));
+    s(0x00080060, S('CS', 'NM')); s(0x00080070, S('LO', 'OmniStitch demo phantom')); s(0x00081030, S('LO', 'Bone Scan (synthetic)'));
+    s(0x0008103E, S('LO', latLabel || (view + ' ' + name)));
+    s(0x00100010, S('PN', 'PHANTOM^DEMO')); s(0x00100020, S('LO', 'DEMO-0001'));
+    s(0x00181242, ISv(180000)); s(0x0020000D, S('UI', study)); s(0x0020000E, S('UI', newUID())); s(0x00200052, S('UI', frameOfRef));
+    s(0x00280002, U16(1)); s(0x00280004, S('CS', 'MONOCHROME2')); s(0x00280008, ISv(1)); s(0x00280009, ATv([0x00540010, 0x00540020]));
+    s(0x00280010, U16(R)); s(0x00280011, U16(C)); s(0x00280030, DSv([ps, ps]));
+    s(0x00280100, U16(16)); s(0x00280101, U16(16)); s(0x00280102, U16(15)); s(0x00280103, U16(0));
+    s(0x00540010, U16(1)); s(0x00540011, U16(1)); s(0x00540020, U16(1)); s(0x00540021, U16(1));
+    const code = new Map([[0x00080100, Object.assign({ tag: 0x00080100 }, S('SH', 'C-163A8'))], [0x00080102, Object.assign({ tag: 0x00080102 }, S('SH', 'SRT'))], [0x00080104, Object.assign({ tag: 0x00080104 }, S('LO', '^99m^Technetium'))]]);
+    s(0x00540016, SQv([new Map([[0x00540300, Object.assign({ tag: 0x00540300 }, SQv([code]))]])]));
+    s(0x00540022, SQv([new Map([[0x00200032, Object.assign({ tag: 0x00200032 }, DSv([-281.65, -281.65, z]))], [0x00540200, Object.assign({ tag: 0x00540200 }, S('DS', String(angle)))]])]));
+    const b = new Uint8Array(pix.buffer); s(0x7FE00010, { vr: 'OW', bytes: b });
+    const meta = new Map([[0x00020010, Object.assign({ tag: 0x00020010 }, S('UI', '1.2.840.10008.1.2.1'))]]);
+    const ch = []; writeSet(meta, ch); writeSet(ds, ch);
+    const pre = new Uint8Array(132); pre.set([68, 73, 67, 77], 128);
+    const all = [pre, ...ch], out = new Uint8Array(all.reduce((q, c) => q + c.length, 0)); let o = 0; for (const c of all) { out.set(c, o); o += c.length; }
+    files.push({ name: (latLabel ? 'RLATSKULL' : view + name) + '001.dcm', data: out });
+  };
+  names.forEach((nm, i) => { make(ant, 'ANT', nm, tops[i], 180); make(pst, 'POST', nm, tops[i] + (i ? 6 : 0), 0); });
+  // A right-lateral skull view (angle 180, like GE) that must be excluded automatically
+  const lat = mk(); ell(lat, 120, 70, 38, 36, 7, 0.12); blob(lat, 92, 95, 14, 10, 6); for (let i = 0; i < 8; i++) blob(lat, 150, 112 + i * 13, 6, 5, 10); body(lat);
+  make(lat, 'ANT', 'SKULL', 0, 180, 'SKULL LAT-1');
+  return files;
+}
+
+return { parseDicom, loadFrames, classify, stitch, buildDicom, loadTemplate, buildFromTemplate, resample, zip, phantomSpots, fovRows, str, nums, g };
+})();
+
+
+</script>
+<script>
+'use strict';
+const $ = s => document.querySelector(s);
+let frames = [], result = null, cmap = 'inv', isDemo = false;
+let dlNS; // downloads capability namespace (claude.ai viewer) or null
+if (window.claude && window.claude.use) window.claude.use('downloads').then(x => { dlNS = x; }).catch(() => { dlNS = null; });
+
+function toast(msg, ms = 3800) { const t = $('#toast'); t.textContent = msg; t.hidden = false; clearTimeout(toast.h); toast.h = setTimeout(() => t.hidden = true, ms); }
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const prettyName = f => (f.label || f.filename.replace(/\.[^.]*$/, '')).replace(/_DS$/, '');
+
+// ── loading ──────────────────────────────────────────────────────────────
+async function loadBuffers(list, demo = false) {
+  const out = [], bad = [];
+  for (const { name, data } of list) {
+    try { out.push(...OS.loadFrames(data, name)); } catch (e) { bad.push(name + ': ' + e.message); }
+  }
+  if (!out.length) { toast(bad.length ? 'No usable DICOM images. ' + bad[0] : 'No files found.', 6000); return; }
+  frames = out; isDemo = demo;
+  frames.forEach(f => f.manualOffset = 0);
+  $('#demonote').hidden = !demo;
+  if (bad.length) toast(bad.length + ' file(s) skipped (not DICOM images). ' + bad[0], 6000);
+  else if (!demo) toast(out.length + ' spot image' + (out.length > 1 ? 's' : '') + ' loaded');
+  run();
+}
+async function readFiles(fileList) {
+  const list = [];
+  for (const f of fileList) { if (f.size < 256 || /\.(txt|xml|json|jpg|png|pdf|ini|db)$/i.test(f.name)) continue; list.push({ name: f.webkitRelativePath || f.name, data: new Uint8Array(await f.arrayBuffer()) }); }
+  loadBuffers(list);
+}
+$('#pick').onclick = () => $('#files').click();
+$('#pickdir').onclick = () => $('#dir').click();
+$('#files').onchange = e => readFiles([...e.target.files]);
+$('#dir').onchange = e => readFiles([...e.target.files]);
+$('#demo').onclick = () => loadBuffers(OS.phantomSpots(), true);
+const drop = $('#drop');
+['dragenter', 'dragover'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.add('over'); }));
+['dragleave', 'drop'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.remove('over'); }));
+document.addEventListener('dragover', e => e.preventDefault());
+document.addEventListener('drop', e => e.preventDefault());
+drop.addEventListener('drop', async e => {
+  const items = [...(e.dataTransfer.items || [])].map(i => i.webkitGetAsEntry && i.webkitGetAsEntry()).filter(Boolean);
+  if (!items.length) return readFiles([...e.dataTransfer.files]);
+  const files = [];
+  const walk = ent => new Promise(res => {
+    if (ent.isFile) ent.file(f => { files.push(f); res(); }, () => res());
+    else { const r = ent.createReader(), all = []; const next = () => r.readEntries(async es => { if (!es.length) { for (const x of all) await walk(x); res(); } else { all.push(...es); next(); } }, () => res()); next(); }
+  });
+  for (const it of items) await walk(it);
+  readFiles(files);
+});
+
+// ── stitching ────────────────────────────────────────────────────────────
+function run() {
+  try {
+    result = OS.stitch(frames, { normaliseTime: $('#norm').checked, decayCorrect: $('#decay').checked, includeOblique: $('#obl').checked, matchZoom: $('#zoom').checked, blend: $('#blend').value });
+  } catch (e) { result = null; toast(e.message, 6000); }
+  renderSpots(); renderFilms(); renderSeams(); renderSummary();
+  $('#savedcm').disabled = $('#savepng').disabled = !result;
+}
+['#norm', '#decay', '#obl', '#zoom', '#blend'].forEach(s => $(s).onchange = () => { if (frames.length) run(); });
+const viewTitle = v => v === 'ANT' ? 'Anterior' : v === 'POST' ? 'Posterior' : v;
+
+// ── spot rack ────────────────────────────────────────────────────────────
+function thumb(f) {
+  const c = document.createElement('canvas'); const [r0, r1] = OS.fovRows([f]); const h = r1 - r0 + 1;
+  c.width = f.cols; c.height = h; const ctx = c.getContext('2d'), im = ctx.createImageData(f.cols, h);
+  let mx = 1; for (let i = r0 * f.cols; i < (r1 + 1) * f.cols; i++) if (f.data[i] > mx) mx = f.data[i];
+  for (let i = 0; i < f.cols * h; i++) { const v = Math.min(1, f.data[r0 * f.cols + i] / (mx * 0.6)); paint(im.data, i * 4, v); }
+  ctx.putImageData(im, 0, 0); return c;
+}
+function renderSpots() {
+  const box = $('#spots'); box.innerHTML = '';
+  const isUsed = f => f.include && f.view !== 'OTHER' && f.view !== 'LAT' && ($('#obl').checked || f.view === 'ANT' || f.view === 'POST' || f.userSet);
+  const extra = [...new Set(frames.filter(isUsed).map(f => f.view))].filter(v => v !== 'ANT' && v !== 'POST').sort();
+  const groups = [['ANT', 'Anterior'], ['POST', 'Posterior'], ...extra.map(v => [v, v]), ['OFF', 'Not used']];
+  for (const [key, title] of groups) {
+    const list = frames.filter(f => key === 'OFF' ? !isUsed(f) : (isUsed(f) && f.view === key)).sort((a, b) => b.z - a.z);
+    if (!list.length) continue;
+    const h = document.createElement('div'); h.className = 'grp'; h.innerHTML = '<span>' + title + '</span><span class="cnt">' + list.length + (list.length === 1 ? ' spot' : ' spots') + '</span>'; box.appendChild(h);
+    for (const f of list) {
+      const el = document.createElement('div'); el.className = 'spot' + (key === 'OFF' ? ' off' : '');
+      const cur = isUsed(f) ? f.view : 'OFF';
+      el.innerHTML = '<div></div><div style="min-width:0"><div class="nm" title="' + esc(f.filename) + '">' + esc(prettyName(f)) + '</div><div class="meta">' +
+        (key === 'OFF' && f.reason ? esc(f.reason) : 'Z ' + f.z.toFixed(1) + ' mm') + '</div></div>' +
+        '<select aria-label="Use ' + esc(prettyName(f)) + ' as"><option value="ANT">ANT</option><option value="POST">POST</option>' +
+        (f.view !== 'ANT' && f.view !== 'POST' && f.view !== 'OTHER' && f.view !== 'LAT' ? '<option value="' + esc(f.view) + '">' + esc(f.view) + '</option>' : '') +
+        '<option value="OFF">Skip</option></select>';
+      el.firstChild.appendChild(thumb(f));
+      const sel = el.querySelector('select'); sel.value = cur;
+      sel.onchange = () => { f.userSet = true; if (sel.value === 'OFF') { f.include = false; f.reason = 'skipped by you'; } else { f.include = true; f.view = sel.value; f.reason = ''; } run(); };
+      box.appendChild(el);
+    }
+  }
+}
+
+// ── films ────────────────────────────────────────────────────────────────
+function paint(d, o, v) {
+  let r, g, b;
+  if (cmap === 'inv') { r = g = b = 255 * (1 - v); }
+  else if (cmap === 'gray') { r = g = b = 255 * v; }
+  else { r = 255 * Math.min(1, v * 2.6); g = 255 * Math.min(1, Math.max(0, v * 2.6 - 1)); b = 255 * Math.max(0, v * 2.6 - 2) / 0.6; }
+  d[o] = r; d[o + 1] = g; d[o + 2] = b; d[o + 3] = 255;
+}
+function robustMax() {
+  const vals = [];
+  for (const a of result.arrays) for (let i = 0; i < a.length; i += 3) if (a[i] > 0) vals.push(a[i]);
+  if (!vals.length) return 1; vals.sort((x, y) => x - y); return vals[Math.floor(vals.length * 0.998)] || 1;
+}
+function filmCanvas(a, top, H, vmax) {
+  const C = result.cols, c = document.createElement('canvas'); c.width = C; c.height = H;
+  const ctx = c.getContext('2d'), im = ctx.createImageData(C, H);
+  for (let i = 0; i < C * H; i++) paint(im.data, i * 4, Math.min(1, Math.max(0, a[top * C + i] / vmax)));
+  ctx.putImageData(im, 0, 0); return c;
+}
+function renderFilms() {
+  const box = $('#films'); box.innerHTML = '';
+  if (!result) { box.innerHTML = '<div class="empty">Load spot images to see the whole-body result.<br>No files at hand? Click <b>Demo phantom</b> to try it with synthetic data.</div>'; return; }
+  const lvl = +$('#level').value / 100, vmax = robustMax() * lvl * 1.8 + 1e-6;
+  const H = result.contentRows;
+  result.views.forEach((v, k) => {
+    const film = document.createElement('div'); film.className = 'film';
+    film.innerHTML = '<div class="cap ' + (v === 'ANT' ? 'ant' : v === 'POST' ? 'post' : 'obl') + '">' + esc(viewTitle(v).toUpperCase()) + '</div><div class="box"><div class="marks"></div></div>';
+    const cv = filmCanvas(result.arrays[k], 0, H, vmax); cv.setAttribute('role', 'img'); cv.setAttribute('aria-label', viewTitle(v) + ' whole-body image');
+    film.querySelector('.box').prepend(cv);
+    if ($('#guides').checked) {
+      const marks = film.querySelector('.marks');
+      result.seams[v].forEach(s => { const m = document.createElement('div'); m.className = 'mark'; m.style.top = (100 * s.row / H) + '%'; m.innerHTML = '<span>' + s.overlap + ' px</span>'; marks.appendChild(m); });
+    }
+    box.appendChild(film);
+  });
+}
+document.querySelectorAll('[data-cm]').forEach(b => b.onclick = () => {
+  cmap = b.dataset.cm; document.querySelectorAll('[data-cm]').forEach(x => x.setAttribute('aria-pressed', x === b)); renderFilms(); renderSpots();
+});
+let lvlT; $('#level').oninput = () => { $('#levelv').textContent = $('#level').value + '%'; clearTimeout(lvlT); lvlT = setTimeout(renderFilms, 30); };
+$('#guides').onchange = renderFilms;
+
+// ── seams ────────────────────────────────────────────────────────────────
+function renderSeams() {
+  const box = $('#seams'); box.innerHTML = '';
+  if (!result) return;
+  $('#pxmm').textContent = result.ps.toFixed(2);
+  for (const v of result.views) {
+    const h = document.createElement('div'); h.className = 'grp'; h.innerHTML = '<span>' + esc(viewTitle(v)) + '</span><span class="cnt">' + (result.seams[v].length ? result.seams[v].length + (result.seams[v].length === 1 ? ' seam' : ' seams') : '1 spot') + '</span>'; box.appendChild(h);
+    if (!result.seams[v].length) { const p = document.createElement('div'); p.className = 'note'; p.textContent = 'Only one spot in this view.'; box.appendChild(p); }
+    result.seams[v].forEach((s, i) => {
+      const el = document.createElement('div'); el.className = 'seam';
+      const ov = s.overlap, mm = Math.round(ov * result.ps);
+      el.innerHTML = '<div style="min-width:0"><div class="lbl">' + esc(short(s.upper)) + ' → ' + esc(short(s.lower)) + '</div><div class="ov' + (ov < 4 ? ' bad' : '') + '">' +
+        (ov < 0 ? 'gap ' + (-ov) + ' px (' + (-mm) + ' mm)' : ov + ' px · ' + mm + ' mm') + '</div></div>' +
+        '<div class="nudge"><button aria-label="Less overlap">−</button><output>' + (s.lower.manualOffset > 0 ? '+' : '') + s.lower.manualOffset + '</output><button aria-label="More overlap">+</button></div>';
+      const [minus, plus] = el.querySelectorAll('button');
+      minus.onclick = () => nudge(v, i, -1); plus.onclick = () => nudge(v, i, +1);
+      box.appendChild(el);
+    });
+  }
+}
+function short(f) { const n = prettyName(f).replace(/^(ANT|POST|ANTERIOR|POSTERIOR)[ _-]*/i, ''); return n || prettyName(f); }
+function nudge(v, i, d) {
+  const targets = [result.seams[v][i].lower];
+  if ($('#link').checked) for (const w of result.views) if (w !== v && result.seams[w][i]) targets.push(result.seams[w][i].lower);
+  targets.forEach(f => f.manualOffset += d);
+  run();
+}
+
+// ── summary ──────────────────────────────────────────────────────────────
+function renderSummary() {
+  const s = $('#summary'), w = $('#warns'); w.innerHTML = '';
+  if (!result) { s.innerHTML = '<dt>Status</dt><dd>—</dd>'; return; }
+  const used = result.used.length, skipped = frames.length - used;
+  const len = (result.contentRows * result.ps / 10).toFixed(0);
+  s.innerHTML = '<dt>Spots used</dt><dd>' + used + (skipped ? ' (' + skipped + ' set aside)' : '') + '</dd>' +
+    '<dt>Views</dt><dd>' + result.views.join(' + ') + '</dd>' +
+    '<dt>Matrix</dt><dd>' + result.cols + ' × ' + result.rows + '</dd>' +
+    '<dt>Pixel size</dt><dd>' + result.ps.toFixed(3) + ' mm' + (result.mixedZoom ? ' (mixed zoom matched)' : '') + '</dd>' +
+    '<dt>Body coverage</dt><dd>' + len + ' cm</dd>' +
+    '<dt>Decay correction</dt><dd>' + (result.decay ? 'applied' : ($('#decay').checked ? 'isotope unknown' : 'off')) + '</dd>';
+  const msgs = [...result.warnings];
+  if (result.views.length < 2) msgs.push('Only one view found. The DICOM will have a single frame.');
+  if (result.views.length > 2) msgs.push('The DICOM will have ' + result.views.length + ' frames (' + result.views.join(', ') + '). Some vendor software expects only ANT and POST in a whole-body file.');
+  for (const m of msgs) { const li = document.createElement('li'); li.textContent = m; w.appendChild(li); }
+}
+
+
+// ── vendor template ──────────────────────────────────────────────────────
+let tpl = null;
+$('#tplpick').onclick = () => $('#tplfile').click();
+$('#tplfile').onchange = async e => {
+  const f = e.target.files[0]; e.target.value = '';
+  if (!f) return;
+  try { tpl = OS.loadTemplate(new Uint8Array(await f.arrayBuffer()), f.name); }
+  catch (err) { tpl = null; toast('Could not use that file as a template. ' + err.message, 6000); }
+  renderTemplate();
+};
+$('#tplclear').onclick = () => { tpl = null; renderTemplate(); toast('Template removed. Exports use the standard header.'); };
+function renderTemplate() {
+  const info = $('#tplinfo');
+  $('#tplclear').hidden = $('#tplgeowrap').hidden = info.hidden = !tpl;
+  $('#tplpick').textContent = tpl ? 'Replace sample' : 'Load sample WB DICOM';
+  if (!tpl) { info.innerHTML = ''; return; }
+  info.innerHTML = '<b>' + esc(tpl.maker || 'Unknown vendor') + '</b><br>' + esc(tpl.label || tpl.name) + ' · ' + tpl.cols + ' × ' + tpl.rows + ' · ' + tpl.ps.toFixed(3) + ' mm · ' + tpl.frames + ' frame' + (tpl.frames > 1 ? 's' : '') +
+    (tpl.privateGroups.length ? '<br>Vendor tags: ' + esc(tpl.privateGroups.join(', ')) : '') +
+    (tpl.isWB ? '' : '<br><span class="w">This file is not a whole-body image, so its header may not suit.</span>');
+  $('#vendor').open = true;
+}
+
+// ── export ───────────────────────────────────────────────────────────────
+function patientTag() { const d = OS.str(OS.g(result.used[0].ds, 0x00080020)).replace(/\D/g, ''); return d ? '_' + d : ''; }  // study date only, never patient identifiers
+async function saveFile(name, data, mime) {
+  if (dlNS === undefined && window.claude && window.claude.use) { try { dlNS = await window.claude.use('downloads'); } catch { dlNS = null; } }
+  if (dlNS) {
+    try { await dlNS.save({ filename: name, data }); toast('Saved ' + name); }
+    catch (e) { if (e && e.code !== 'declined') toast('Could not save: ' + (e.message || e.code)); }
+    return;
+  }
+  const url = URL.createObjectURL(new Blob([data], { type: mime }));
+  const a = document.createElement('a'); a.href = url; a.download = name; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 4000);
+}
+$('#savedcm').onclick = async () => {
+  let dcm;
+  if (tpl) {
+    try {
+      const out = OS.buildFromTemplate(result, tpl, { matchGeometry: $('#tplgeo').checked });
+      dcm = out.bytes;
+      toast('Header modelled on the ' + (tpl.maker || 'vendor') + ' sample' + (out.resampled ? ', resampled to ' + out.ps.toFixed(3) + ' mm' : ''), 5000);
+    } catch (err) { toast('Template could not be applied (' + err.message + '). Using the standard header.', 6000); dcm = OS.buildDicom(result); }
+  } else dcm = OS.buildDicom(result);
+  const base = 'WB_Stitched' + patientTag();
+  if (dlNS || (dlNS === undefined && window.claude)) await saveFile(base + '.zip', OS.zip([{ name: base + '.dcm', data: dcm }]), 'application/zip');
+  else await saveFile(base + '.dcm', dcm, 'application/dicom');
+};
+$('#savepng').onclick = async () => {
+  const lvl = +$('#level').value / 100, vmax = robustMax() * lvl * 1.8 + 1e-6, H = result.contentRows, C = result.cols, gap = 12;
+  const out = document.createElement('canvas'); out.width = C * result.views.length + gap * (result.views.length - 1); out.height = H;
+  const ctx = out.getContext('2d'); ctx.fillStyle = cmap === 'inv' ? '#fff' : '#000'; ctx.fillRect(0, 0, out.width, out.height);
+  result.views.forEach((v, k) => ctx.drawImage(filmCanvas(result.arrays[k], 0, H, vmax), k * (C + gap), 0));
+  const blob = await new Promise(r => out.toBlob(r, 'image/png'));
+  await saveFile('WB_Stitched' + patientTag() + '.png', blob, 'image/png');
+};
+setTimeout(() => { if (dlNS || (dlNS === undefined && window.claude)) $('#dlnote').textContent += ' On this page it downloads inside a .zip; unzip to get the .dcm file.'; }, 1500);
+
+renderFilms(); renderSummary();
+</script>
+
+</body>
+</html>
